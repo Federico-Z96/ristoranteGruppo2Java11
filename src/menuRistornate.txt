@@ -1,14 +1,6 @@
      ristorante gruppo 2
 
      menu vegetariano
-
-     Bevande :
-               vino: rosso della casa 10$
-                     bianco della casa 11$
-               birra : bionda 5$
-                       rossa 7$
-                       ipa 7.5$
-
      Primi  Piatti:
             PASTA CIME DI RAPA : 4
             Risotto ai funghi : 4,5
