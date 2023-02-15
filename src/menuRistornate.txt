@@ -1,6 +1,31 @@
+    Antipasti : Sformatino di verdure : 4.99 $
+                Pinzimonio            : 3.50 $
+                Verdure Pastellate    : 4.50 $
+                Cavolo Gratinato      : 6.99 $
+                Ratatouille           : 5.49 $
+
      ristorante gruppo 2
+     Secondi Piatti: Hamburger vegetariano : 5.99 $
+                     Parmigiana di melanzane : 9.99 $
+                     Involtini di primavera : 12.99 $
+                     Tofu in salsa di soia : 6 $
+                     Millefoglie di verdure : 9 $
 
-     menu vegetariano
-
-     Bevande :
-      vino rosso 10$
+     menu vegetariano:
+     Primi  Piatti:
+            Pasta Cime di Rapa: 4,00 €
+            Risotto ai funghi: 4,50 €
+            Passata di Verdure: 3,00 €
+            Spaghetti Cacio e Pepe: 5,00 €
+            Gnocchi alla romana: 6,50 €
+ Secondi Piatti: Hamburger vegetariano : 5.99 $
+                 Parmigiana di melanzane : 9.99 $
+                 Involtini di primavera : 12.99 $
+                 Tofu in salsa di soia : 6 $
+                 Millefoglie di verdure : 9 $
+ dessert:
+           tirasumù: 7.99;
+           torta di mele: 6.99;
+           torta di mirtilli: 5.99;
+           cannolo siciliano: 2.99;
+           babà: 2.99;
