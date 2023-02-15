@@ -3,4 +3,8 @@
      menu vegetariano
 
      Bevande :
-      vino rosso 10$
+               vino: rosso della casa 10$
+                     bianco della casa 11$
+               birra : bionda 5$
+                       rossa 7$
+                       ipa 7.5$
