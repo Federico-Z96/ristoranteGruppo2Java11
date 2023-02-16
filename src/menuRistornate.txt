@@ -1,7 +1,9 @@
      ristorante gruppo 2
 
-     menu vegetariano
+     menu vegetariano:
      Primi  Piatti:
-            PASTA CIME DI RAPA : 4
-            Risotto ai funghi : 4,5
-            Passata di Verdure : 3
+            Pasta Cime di Rapa: 4,00 €
+            Risotto ai funghi: 4,50 €
+            Passata di Verdure: 3,00 €
+            Spaghetti Cacio e Pepe: 5,00 €
+            Gnocchi alla romana: 6,50 €
