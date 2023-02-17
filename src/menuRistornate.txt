@@ -1,5 +1,21 @@
-    Antipasti : Sformatino di verdure : 4.99 $
+     ristorante gruppo 2
+
+     menu vegetariano
+
+     Bevande :
+               vino: rosso della casa 10$
+                     bianco della casa 11$
+               birra : bionda 5$
+                       rossa 7$
+                       ipa 7.5$
+Antipasti : Sformatino di verdure : 4.99 $
                 Pinzimonio            : 3.50 $
                 Verdure Pastellate    : 4.50 $
                 Cavolo Gratinato      : 6.99 $
                 Ratatouille           : 5.49 $
+ Primi  Piatti:
+            Pasta Cime di Rapa: 4,00 €
+            Risotto ai funghi: 4,50 €
+            Passata di Verdure: 3,00 €
+            Spaghetti Cacio e Pepe: 5,00 €
+            Gnocchi alla romana: 6,50 €
