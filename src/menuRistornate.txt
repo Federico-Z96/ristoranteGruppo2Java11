@@ -19,3 +19,8 @@ Antipasti : Sformatino di verdure : 4.99 $
             Passata di Verdure: 3,00 €
             Spaghetti Cacio e Pepe: 5,00 €
             Gnocchi alla romana: 6,50 €
+ Secondi Piatti: Hamburger vegetariano : 5.99 $
+                 Parmigiana di melanzane : 9.99 $
+                 Involtini di primavera : 12.99 $
+                 Tofu in salsa di soia : 6 $
+                 Millefoglie di verdure : 9 $
