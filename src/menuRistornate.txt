@@ -30,3 +30,5 @@ Antipasti : Sformatino di verdure : 4.99 $
            torta di mirtilli: 5.99 $
            cannolo siciliano: 2.99 $
            babà: 2.99 $
+ menu bambino : pasta(pomodoro o opesto) 4 $
+                coteletta con patatine  5 $
