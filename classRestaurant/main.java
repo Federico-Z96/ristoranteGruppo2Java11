@@ -36,6 +36,14 @@ public  class main {
                 new SecondiPiatti("Millefoglie di verdure ",9.99 )
         );
 
+        List<Desserts> addDesserts = Arrays.asList(
+                new Desserts("Tiramisù ", 7.99),
+                new Desserts("Torta di mele ", 6.99),
+                new Desserts("Crostata di mirtilli ", 5.99),
+                new Desserts("Cannolo siciliano ", 2.99),
+                new Desserts("Babà ", 2.99 )
+        );
+
     }
 
 }
