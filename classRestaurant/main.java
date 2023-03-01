@@ -21,7 +21,13 @@ public  class main {
                 new Appetizer("Ratatouille ", 3.50),
                 new Appetizer("Cavolo Gratinato ", 3.99)
         );
-
+        List<first_dishes> firstDishes = Arrays.asList(
+                new first_dishes("Cime di Rapa" , 4.00),
+                new  first_dishes("Risotto di funghi" , 4.50),
+                new  first_dishes("Passata di Vrrdure" , 3.00),
+                new  first_dishes("Spaghetti  Cacio e Pepe" , 5.00),
+                new  first_dishes("Gnocchi alla romana" , 6.50)
+        );
         List<SecondiPiatti> secondiPiattis = Arrays.asList(
                 new SecondiPiatti("Hamburger vegetariano ",  5.99),
                 new SecondiPiatti("Parmigiana di melanzane ",  9.99),
