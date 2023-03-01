@@ -5,10 +5,11 @@ public class Desserts {
     private String name;
     private double price;
 
-    public Desserts(String name,double price) {
-        this.name = name;
+    public Desserts(String name, double price) {
+        this.name =name;
         this.price = price;
-        System.out.println(name + price);
+
+
     }
 
     public String getName() {
@@ -23,7 +24,12 @@ public class Desserts {
         this.name = name;
     }
 
-    public void setPrice(double price) {
+
+    public void setPrice(double price){
         this.price = price;
     }
+
+
+
+
 }

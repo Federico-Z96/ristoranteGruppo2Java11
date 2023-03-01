@@ -24,7 +24,7 @@ public class Beverage {
         this.type = type;
         this.name = name;
         this.price = price;
-        System.out.println(type + name + price);
+
 
 
     }

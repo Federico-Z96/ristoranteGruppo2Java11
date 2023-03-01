@@ -12,7 +12,7 @@ public class SecondiPiatti {
     public  SecondiPiatti(String name, double price){
         this.name = name;
         this.price = price;
-        System.out.println(name + price);
+
 
 
     }
