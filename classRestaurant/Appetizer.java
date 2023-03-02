@@ -10,8 +10,6 @@ public class Appetizer {
     private double price;
 
 
-
-
     public Appetizer(String name, double price) {
         this.name = name;
         this.price = price;
@@ -35,5 +33,9 @@ public class Appetizer {
         this.price = price;
     }
 
+    void printinfo() {
+        System.out.println(this.name + this.price);
+    }
+}
 }
 

@@ -8,8 +8,11 @@ public class Beverage {
     private double price;
     private String type;
 
-
-
+    public Beverage(String type,String name,double price) {
+        this.type = type;
+        this.name = name;
+        this.price = price;
+    }
 
     public String getType() {
         return type;
@@ -18,17 +21,6 @@ public class Beverage {
     public void setType(String type) {
         this.type = type;
     }
-
-
-    public Beverage(String type,String name,double price) {
-        this.type = type;
-        this.name = name;
-        this.price = price;
-
-
-
-    }
-
     public String getName() {
         return name;
     }
@@ -43,5 +35,8 @@ public class Beverage {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+    void  printinfo(){
+        System.out.println(this.type + this.name + this.price);
     }
 }

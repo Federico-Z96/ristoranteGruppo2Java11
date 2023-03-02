@@ -17,6 +17,8 @@ public  class main {
                 new Beverage("Birra ", "Ipa ", 7.5)
         );
 
+
+
         List<Appetizer> menuAppetizer = Arrays.asList(
                 new Appetizer("Sformatino di verdure ", 4.99),
                 new Appetizer("Pinzimonio ", 4.50),
@@ -24,6 +26,8 @@ public  class main {
                 new Appetizer("Ratatouille ", 3.50),
                 new Appetizer("Cavolo Gratinato ", 3.99)
         );
+
+
         List<first_dishes> firstDishes = Arrays.asList(
                 new first_dishes("Cime di Rapa" , 4.00),
                 new  first_dishes("Risotto di funghi" , 4.50),
@@ -46,6 +50,26 @@ public  class main {
                 new Desserts("Cannolo siciliano ", 2.99),
                 new Desserts("Babà ", 2.99 )
         );
+        for (Beverage beverage : beverages) {
+            beverage.printinfo();
+        }
+        for (Appetizer Appetizer : menuAppetizer) {
+            Appetizer.printinfo();
+        }
+        for (first_dishes first_dishes : firstDishes) {
+            first_dishes.printinfo();
+        }
+        for (SecondiPiatti SecondiPiatti : secondiPiattis) {
+            SecondiPiatti.printinfo();
+        }
+        for (Desserts Desserts : addDesserts) {
+            Desserts.printinfo();
+        }
+
+
+
+
+
 
 
 

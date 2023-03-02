@@ -32,5 +32,9 @@ public class SecondiPiatti {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    void  printinfo(){
+        System.out.println( this.name + this.price);
+    }
 }
 

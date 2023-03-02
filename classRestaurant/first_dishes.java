@@ -30,4 +30,8 @@ public class first_dishes {
                 '}';
     }*/
 
+    void  printinfo(){
+        System.out.println( this.name + this.price);
+    }
+
 }
