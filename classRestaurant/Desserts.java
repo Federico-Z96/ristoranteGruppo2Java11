@@ -31,7 +31,7 @@ public class Desserts {
 
 
     void  printinfo(){
-        System.out.println( this.name + this.price);
+        System.out.println( this.name + this.price+"$");
     }
 
 

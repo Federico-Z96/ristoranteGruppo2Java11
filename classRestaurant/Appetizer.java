@@ -34,8 +34,8 @@ public class Appetizer {
     }
 
     void printinfo() {
-        System.out.println(this.name + this.price);
+        System.out.println(this.name + this.price +"$");
     }
 }
-}
+
 

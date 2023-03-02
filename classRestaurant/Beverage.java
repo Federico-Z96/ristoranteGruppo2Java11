@@ -37,6 +37,6 @@ public class Beverage {
         this.price = price;
     }
     void  printinfo(){
-        System.out.println(this.type + this.name + this.price);
+        System.out.println(this.type + this.name + this.price+"$");
     }
 }

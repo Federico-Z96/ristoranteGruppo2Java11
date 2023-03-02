@@ -1,10 +1,10 @@
 package classRestaurant;
 
-public class first_dishes {
+public class FirstDishes {
         private String name;
         private double price;
 
-        public first_dishes (String name ,double price) {
+        public FirstDishes(String name , double price) {
             this.name = name;
             this.price = price;
 
@@ -31,7 +31,7 @@ public class first_dishes {
     }*/
 
     void  printinfo(){
-        System.out.println( this.name + this.price);
+        System.out.println( this.name + this.price+"$");
     }
 
 }

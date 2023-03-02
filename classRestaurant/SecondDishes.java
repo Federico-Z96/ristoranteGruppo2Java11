@@ -2,14 +2,14 @@ package classRestaurant;
 
 import java.util.ArrayList;
 
-public class SecondiPiatti {
+public class SecondDishes {
 
     private String name;
     private double price;
 
 
 
-    public  SecondiPiatti(String name, double price){
+    public  SecondDishes(String name, double price){
         this.name = name;
         this.price = price;
 
@@ -34,7 +34,7 @@ public class SecondiPiatti {
     }
 
     void  printinfo(){
-        System.out.println( this.name + this.price);
+        System.out.println( this.name + this.price+"$");
     }
 }
 

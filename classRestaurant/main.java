@@ -1,6 +1,5 @@
 package classRestaurant;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -28,19 +27,19 @@ public  class main {
         );
 
 
-        List<first_dishes> firstDishes = Arrays.asList(
-                new first_dishes("Cime di Rapa" , 4.00),
-                new  first_dishes("Risotto di funghi" , 4.50),
-                new  first_dishes("Passata di Vrrdure" , 3.00),
-                new  first_dishes("Spaghetti  Cacio e Pepe" , 5.00),
-                new  first_dishes("Gnocchi alla romana" , 6.50)
+        List<FirstDishes> firstDishes = Arrays.asList(
+                new FirstDishes("Cime di Rapa " , 4.00),
+                new FirstDishes("Risotto di funghi " , 4.50),
+                new FirstDishes("Passata di Verdure " , 3.00),
+                new FirstDishes("Spaghetti  Cacio e Pepe " , 5.00),
+                new FirstDishes("Gnocchi alla romana " , 6.50)
         );
-        List<SecondiPiatti> secondiPiattis = Arrays.asList(
-                new SecondiPiatti("Hamburger vegetariano ",  5.99),
-                new SecondiPiatti("Parmigiana di melanzane ",  9.99),
-                new SecondiPiatti("Involtini di primavera ",  12.99),
-                new SecondiPiatti("Tofu in salsa di soia ", 6.99),
-                new SecondiPiatti("Millefoglie di verdure ",9.99 )
+        List<SecondDishes> secondiPiattis = Arrays.asList(
+                new SecondDishes("Hamburger vegetariano ",  5.99),
+                new SecondDishes("Parmigiana di melanzane ",  9.99),
+                new SecondDishes("Involtini di primavera ",  12.99),
+                new SecondDishes("Tofu in salsa di soia ", 6.99),
+                new SecondDishes("Millefoglie di verdure ",9.99 )
         );
 
         List<Desserts> addDesserts = Arrays.asList(
@@ -50,18 +49,24 @@ public  class main {
                 new Desserts("Cannolo siciliano ", 2.99),
                 new Desserts("Babà ", 2.99 )
         );
+        System.out.println("MENU:\n");
+        System.out.println("Beverages:\n");
         for (Beverage beverage : beverages) {
             beverage.printinfo();
         }
+        System.out.println("\nAppetizer:\n");
         for (Appetizer Appetizer : menuAppetizer) {
             Appetizer.printinfo();
         }
-        for (first_dishes first_dishes : firstDishes) {
+        System.out.println("\nFirst Dishes:\n");
+        for (FirstDishes first_dishes : firstDishes) {
             first_dishes.printinfo();
         }
-        for (SecondiPiatti SecondiPiatti : secondiPiattis) {
+        System.out.println("\nSecond Dishes:\n");
+        for (SecondDishes SecondiPiatti : secondiPiattis) {
             SecondiPiatti.printinfo();
         }
+        System.out.println("\nDesserts:\n");
         for (Desserts Desserts : addDesserts) {
             Desserts.printinfo();
         }
