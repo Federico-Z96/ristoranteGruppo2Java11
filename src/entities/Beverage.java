@@ -1,7 +1,4 @@
-package classRestaurant;
-
-import java.util.ArrayList;
-import java.util.List;
+package src.entities;
 
 public class Beverage {
     private String name;

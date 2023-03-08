@@ -1,4 +1,4 @@
-package classRestaurant;
+package src.entities;
 
 public class Desserts {
 

@@ -1,6 +1,4 @@
-package classRestaurant;
-
-import java.util.ArrayList;
+package src.entities;
 
 public class SecondDishes {
 
