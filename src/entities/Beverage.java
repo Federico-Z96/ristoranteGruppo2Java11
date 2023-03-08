@@ -33,6 +33,8 @@ public class Beverage {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    //TODO inserire sempre il modificatore d'accesso
     void  printinfo(){
         System.out.println(this.type + this.name + this.price+"$");
     }
