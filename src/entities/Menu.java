@@ -119,23 +119,23 @@ public class Menu {
         System.out.println("The medium price is: "+this.mediumPrice+" $");
         System.out.println("\nAppetizers:");
         for (Appetizer appetizer : appetizerList) {
-            System.out.println(appetizer.getName() + " - " + appetizer.getPrice());
+            System.out.println(appetizer.getName() + " - " + appetizer.getPrice() + " $");
         }
         System.out.println("\nFirst dishes:");
         for (FirstDishes firstDish : firstDishesList) {
-            System.out.println(firstDish.getName() + " - " + firstDish.getPrice());
+            System.out.println(firstDish.getName() + " - " + firstDish.getPrice() + " $");
         }
         System.out.println("\nSecond dishes:");
         for (SecondDishes secondDish : secondDishesList) {
-            System.out.println(secondDish.getName() + " - " + secondDish.getPrice());
+            System.out.println(secondDish.getName() + " - " + secondDish.getPrice() + " $");
         }
         System.out.println("\nDesserts:");
         for (Desserts dessert : dessertsList) {
-            System.out.println(dessert.getName() + " - " + dessert.getPrice());
+            System.out.println(dessert.getName() + " - " + dessert.getPrice() + " $");
         }
         System.out.println("\nBeverages:");
         for (Beverage beverage : beverageList) {
-            System.out.println(beverage.getName() + " - " + beverage.getPrice());
+            System.out.println(beverage.getName() + " - " + beverage.getPrice() + " $");
         }
     }
 

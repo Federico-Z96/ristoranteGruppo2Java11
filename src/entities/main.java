@@ -41,6 +41,11 @@ public  class main {
                 new Desserts("Cannolo siciliano ", 2.99),
                 new Desserts("Babà ", 3.99 )
         );
+        Menu menu = new Menu("Veggy","Vegetarian","Not meals or fish used","B. Barbieri",
+                beverages, menuAppetizer, firstDishes, secondDishes, desserts);
+
+        menu.findMediumPrice();
+        menu.printMenu();
     }
 
 }
