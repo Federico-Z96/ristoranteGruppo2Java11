@@ -22,14 +22,6 @@ public class FirstDishes {
             return price;
         }
 
-  /*  @Override
-    public String toString() {
-        return "first_dishes{" +
-                "name='" + name + '\'' +
-                ", price=" + price + " euro" +
-                '}';
-    }*/
-
     void  printinfo(){
         System.out.println( this.name + this.price+"$");
     }

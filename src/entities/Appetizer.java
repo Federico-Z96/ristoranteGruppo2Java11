@@ -28,7 +28,7 @@ public class Appetizer {
         this.price = price;
     }
 
-    void printinfo() {
+    public void printinfo() {
         System.out.println(this.name + this.price +"$");
     }
 }
