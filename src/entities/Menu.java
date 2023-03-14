@@ -13,6 +13,19 @@ public class Menu {
     private double mediumPrice;
     private String description;
     private String chefName;
+    Menu( String name,String type,String description,String chefName,
+          List<Beverage> beverageList,List<Appetizer> appetizerList, List<FirstDishes> firstDishes,
+          List<SecondDishes> secondDishes,List<Desserts> dessertsList){
+        this.name = name;
+        this.type = type;
+        this.description = description;
+        this.chefName = chefName;
+        this.appetizerList = appetizerList;
+        this.beverageList = beverageList;
+        this.firstDishesList = firstDishes;
+        this.secondDishesList = secondDishes;
+        this.dessertsList = dessertsList;
+    }
     public List<Appetizer> getAppetizerList() {
         return appetizerList;
     }

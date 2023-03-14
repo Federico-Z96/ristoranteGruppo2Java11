@@ -21,8 +21,7 @@ public class FirstDishes {
         public Double setPrice(){
             return price;
         }
-
-    void  printinfo(){
+        public void  printinfo(){
         System.out.println( this.name + this.price+"$");
     }
 
