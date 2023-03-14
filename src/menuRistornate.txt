@@ -24,8 +24,11 @@
                  Tofu in salsa di soia : 6 $
                  Millefoglie di verdure : 9 $
  dessert:
-           tirasumù: 7.99;
-           torta di mele: 6.99;
-           torta di mirtilli: 5.99;
-           cannolo siciliano: 2.99;
-           babà: 2.99;
+           tirasumù: 7.99 $
+           torta di mele: 6.99 $
+           torta di mirtilli: 5.99 $
+           cannolo siciliano: 2.99 $
+           babà: 2.99 $
+ menu bambino : pasta(pomodoro o pesto) 4 $
+                coteletta con patatine  5 $
+
