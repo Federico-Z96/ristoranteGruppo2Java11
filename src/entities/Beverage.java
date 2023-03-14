@@ -35,7 +35,7 @@ public class Beverage {
     }
 
     //TODO inserire sempre il modificatore d'accesso
-    void  printinfo(){
+   public void  printinfo(){
         System.out.println(this.type + this.name + this.price+"$");
     }
 }
