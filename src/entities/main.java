@@ -3,6 +3,7 @@ package src.entities;
 import java.util.Arrays;
 import java.util.List;
 
+//TODO i nomi delle classi sempre in maiuscolo
 public  class main {
     public static void main(String[] args) {
 
@@ -41,8 +42,12 @@ public  class main {
                 new Desserts("Cannolo siciliano ", 2.99),
                 new Desserts("Babà ", 3.99 )
         );
+
+        List<Portata> portataList = new List<Portata>() ;
+        //TODO qui agguingere tutti gli elementi creati alla lista portate
+        portataList.addAll(desserts);
         Menu menu = new Menu("Veggy","Vegetarian","Not meals or fish used","B. Barbieri",
-                beverages, menuAppetizer, firstDishes, secondDishes, desserts);
+                portataList);
 
         menu.findMediumPrice();
         menu.printMenu();

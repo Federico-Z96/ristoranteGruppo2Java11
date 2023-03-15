@@ -4,6 +4,8 @@ import java.util.List;
 
 public class Menu {
     private List<Appetizer> appetizerList;
+
+    private List<Portata> portataList;
     private List<Beverage> beverageList;
     private List<FirstDishes> firstDishesList;
     private List<SecondDishes> secondDishesList;
@@ -13,6 +15,8 @@ public class Menu {
     private double mediumPrice;
     private String description;
     private String chefName;
+
+    //TODO i costruttori e tutto vanno fatti con il modificatore d'accesso (private, public)
     Menu( String name,String type,String description,String chefName,
           List<Beverage> beverageList,List<Appetizer> appetizerList, List<FirstDishes> firstDishes,
           List<SecondDishes> secondDishes,List<Desserts> dessertsList){
@@ -141,11 +145,4 @@ public class Menu {
 
 
 
-    //-TODO dobbiamo creare il metodo di stampa per inserire tutte le liste e stampare il menù
-
-    //-TODO inserire nome, tipo menù, prezzo medio, chef e altro che volete per descrivere un menù
-
-    //-TODO inserire tutte le liste
-
-    //-TODO creare costruttore con init delle liste
 }
