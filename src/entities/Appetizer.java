@@ -1,5 +1,7 @@
 package src.entities;
 
+
+
 public class Appetizer {
     private String name;
     private double price;
@@ -27,6 +29,7 @@ public class Appetizer {
     public void setPrice(int price) {
         this.price = price;
     }
+
 
     public void printinfo() {
         System.out.println(this.name + this.price +"$");
