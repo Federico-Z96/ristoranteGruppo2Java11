@@ -1,5 +1,7 @@
 package src.entities;
 
+
+//TODO fare una super classe Portata per tutte le altre classi
 public class Beverage {
     private String name;
     private double price;
@@ -34,7 +36,6 @@ public class Beverage {
         this.price = price;
     }
 
-    //TODO inserire sempre il modificatore d'accesso
    public void  printinfo(){
         System.out.println(this.type + this.name + this.price+"$");
     }
