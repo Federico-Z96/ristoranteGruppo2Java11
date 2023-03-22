@@ -3,7 +3,6 @@ package src.entities;
 import java.util.Arrays;
 import java.util.List;
 
-//TODO i nomi delle classi sempre in maiuscolo
 public  class Main {
     public static void main(String[] args) {
 
