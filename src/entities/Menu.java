@@ -6,6 +6,7 @@ public class Menu {
     private static List<Appetizer> appetizerList;
 
     private List<Portata> portataList;
+   //TODO sistemare no static
     private static List<Beverage> beverageList;
     private static List<FirstDishes> firstDishesList;
     private static List<SecondDishes> secondDishesList;
@@ -93,30 +94,16 @@ public class Menu {
     public void findMediumPrice(){
         double totalPrice = 0;
         int itemCount = 0;
-        for (Appetizer appetizer : appetizerList) {
+        for (Portata appetizer : portataList) {
             totalPrice += appetizer.getPrice();
             itemCount++;
         }
-        for (Beverage beverage : beverageList) {
-            totalPrice += beverage.getPrice();
-            itemCount++;
-            }
-        for (FirstDishes firstDish : firstDishesList) {
-            totalPrice += firstDish.getPrice();
-            itemCount++;
-        }
-        for (SecondDishes secondDish : secondDishesList) {
-            totalPrice += secondDish.getPrice();
-            itemCount++;
-        }
-        for (Desserts dessert : dessertsList) {
-            totalPrice += dessert.getPrice();
-            itemCount++;
-        }
+
+        //TODO sistamre
         this.getMediumPrice() = Math.round(totalPrice / itemCount * 100.0) / 100.0;
     }
 
-
+//TODO accedere sempre ai field nella stessa classe
 
     public void printMenu(){
         System.out.println("Menu: "+this.Name());
@@ -125,8 +112,8 @@ public class Menu {
         System.out.println("Created by: "+this.getChefName());
         System.out.println("The medium price is: "+this.getMediumPrice()+" $");
         System.out.println("\nAppetizers:");
-        for (Appetizer appetizer : appetizerList) {
-            System.out.println(appetizer.getName() + " - " + appetizer.getPrice() + " $");
+        for (Portata appetizer : portataList) {
+            appetizer.printInfo();
         }
         System.out.println("\nFirst dishes:");
         for (FirstDishes firstDish : firstDishesList) {

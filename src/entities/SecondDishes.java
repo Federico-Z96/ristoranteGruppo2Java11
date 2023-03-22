@@ -7,9 +7,10 @@ public class SecondDishes extends Portata {
         super(name, price);
     }
 
+    //TODO sistamare tutte le classi
     @Override
     public void printInfo() {
-        System.out.println( this.getName() + this.getPrice()+"$");
+       super.printInfo();
     }
 }
 
