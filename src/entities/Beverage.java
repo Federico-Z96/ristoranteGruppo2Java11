@@ -2,15 +2,14 @@ package src.entities;
 
 
 //TODO fare una super classe Portata per tutte le altre classi
-public class Beverage {
-    private String name;
-    private double price;
+public class Beverage extends Portata {
     private String type;
 
-    public Beverage(String type,String name,double price) {
+
+
+    public Beverage(String name, String type, double price) {
+        super(name, price);
         this.type = type;
-        this.name = name;
-        this.price = price;
     }
 
     public String getType() {
@@ -20,23 +19,9 @@ public class Beverage {
     public void setType(String type) {
         this.type = type;
     }
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-   public void  printinfo(){
-        System.out.println(this.type + this.name + this.price+"$");
+    @Override
+    public void printInfo() {
+        System.out.println( this.getName() + this.getPrice()+"$");
     }
 }

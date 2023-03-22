@@ -3,13 +3,13 @@ package src.entities;
 import java.util.List;
 
 public class Menu {
-    private List<Appetizer> appetizerList;
+    private static List<Appetizer> appetizerList;
 
     private List<Portata> portataList;
-    private List<Beverage> beverageList;
-    private List<FirstDishes> firstDishesList;
-    private List<SecondDishes> secondDishesList;
-    private List<Desserts> dessertsList;
+    private static List<Beverage> beverageList;
+    private static List<FirstDishes> firstDishesList;
+    private static List<SecondDishes> secondDishesList;
+    private static List<Desserts> dessertsList;
     private String name;
     private String type;
     private double mediumPrice;
@@ -17,7 +17,7 @@ public class Menu {
     private String chefName;
 
     //TODO i costruttori e tutto vanno fatti con il modificatore d'accesso (private, public)
-    Menu( String name,String type,String description,String chefName,
+   public Menu( String name,String type,String description,String chefName,
           List<Beverage> beverageList,List<Appetizer> appetizerList, List<FirstDishes> firstDishes,
           List<SecondDishes> secondDishes,List<Desserts> dessertsList){
         this.name = name;
@@ -113,14 +113,17 @@ public class Menu {
             totalPrice += dessert.getPrice();
             itemCount++;
         }
-        this.mediumPrice = Math.round(totalPrice / itemCount * 100.0) / 100.0;
+        this.getMediumPrice() = Math.round(totalPrice / itemCount * 100.0) / 100.0;
     }
+
+
+
     public void printMenu(){
-        System.out.println("Menu: "+this.name);
-        System.out.println("Type: "+this.type);
-        System.out.println("Description: "+this.description);
-        System.out.println("Created by: "+this.chefName);
-        System.out.println("The medium price is: "+this.mediumPrice+" $");
+        System.out.println("Menu: "+this.Name());
+        System.out.println("Type: "+this.getType());
+        System.out.println("Description: "+this.getDescription());
+        System.out.println("Created by: "+this.getChefName());
+        System.out.println("The medium price is: "+this.getMediumPrice()+" $");
         System.out.println("\nAppetizers:");
         for (Appetizer appetizer : appetizerList) {
             System.out.println(appetizer.getName() + " - " + appetizer.getPrice() + " $");

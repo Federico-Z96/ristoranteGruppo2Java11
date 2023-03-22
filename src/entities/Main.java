@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 
 //TODO i nomi delle classi sempre in maiuscolo
-public  class main {
+public  class Main {
     public static void main(String[] args) {
 
         List<Beverage> beverages = Arrays.asList(
@@ -44,13 +44,14 @@ public  class main {
         );
 
         List<Portata> portataList = new List<Portata>() ;
-        //TODO qui agguingere tutti gli elementi creati alla lista portate
-        portataList.addAll(desserts);
+        //@TODO qui agguingere tutti gli elementi creati alla lista portate
+        portataList.addAll(Desserts);
         Menu menu = new Menu("Veggy","Vegetarian","Not meals or fish used","B. Barbieri",
                 portataList);
 
-        menu.findMediumPrice();
-        menu.printMenu();
+        Menu.findMediumPrice();
+        Menu.printMenu();
+
     }
 
 }

@@ -1,28 +1,13 @@
 package src.entities;
 
-public class FirstDishes {
-        private String name;
-        private double price;
+public class FirstDishes extends Portata {
 
-        public FirstDishes(String name , double price) {
-            this.name = name;
-            this.price = price;
-
-        }
-        public String getName(){
-            return name;
-        }
-        public Double getPrice(){
-            return price;
-        }
-        public String setName(){
-            return name;
-        }
-        public Double setPrice(){
-            return price;
-        }
-        public void  printinfo(){
-        System.out.println( this.name + this.price+"$");
+    public FirstDishes(String name, double price) {
+        super(name, price);
     }
 
+    @Override
+    public void printInfo() {
+        System.out.println( this.getName() + this.getPrice()+"$");
+    }
 }
