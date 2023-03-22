@@ -22,6 +22,6 @@ public class Beverage extends Portata {
 
     @Override
     public void printInfo() {
-        System.out.println( this.getName() + this.getPrice()+"$");
+        super.printInfo();
     }
 }

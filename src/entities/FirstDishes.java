@@ -10,6 +10,6 @@ public class FirstDishes extends Portata {
     // e se abbiamo 300 classi? quindi non sarebbe meglio sfruttare l'ereditarietà?
     @Override
     public void printInfo() {
-        System.out.println( this.getName() + this.getPrice()+"$");
+        super.printInfo();
     }
 }
