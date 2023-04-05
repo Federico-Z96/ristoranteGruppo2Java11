@@ -20,6 +20,7 @@ public class Beverage extends Portata {
         this.type = type;
     }
 
+    //TODO non stampa il tipo che è il field del figlio aggiuntivo
     @Override
     public void printInfo() {
         super.printInfo();

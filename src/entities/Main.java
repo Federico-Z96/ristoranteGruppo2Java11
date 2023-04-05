@@ -1,5 +1,6 @@
 package src.entities;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -42,14 +43,14 @@ public  class Main {
                 new Desserts("Babà ", 3.99 )
         );
 
-        List<Portata> portataList = new List<Portata>() ;
+        List<Portata> portataList = new ArrayList<>() ;
         //@TODO qui agguingere tutti gli elementi creati alla lista portate
-        portataList.addAll(Desserts);
+        portataList.addAll(desserts);
         Menu menu = new Menu("Veggy","Vegetarian","Not meals or fish used","B. Barbieri",
                 portataList);
 
-        Menu.findMediumPrice();
-        Menu.printMenu();
+        menu.findMediumPrice();
+        menu.printMenu();
 
     }
 

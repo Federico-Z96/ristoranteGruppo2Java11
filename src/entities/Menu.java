@@ -6,11 +6,8 @@ public class Menu {
     private List<Appetizer> appetizerList;
 
     private List<Portata> portataList;
-   //TODO sistemare no static
-    private List<Beverage> beverageList;
-    private List<FirstDishes> firstDishesList;
-    private List<SecondDishes> secondDishesList;
-    private List<Desserts> dessertsList;
+
+
     private String name;
     private String type;
     private double mediumPrice;
@@ -108,25 +105,11 @@ public class Menu {
         System.out.println("Created by: "+this.chefName);
         System.out.println("The medium price is: "+this.mediumPrice+" $");
         System.out.println("\nAppetizers:");
+        //TODO sistemare
         for (Portata appetizer : portataList) {
             appetizer.printInfo();
         }
-        System.out.println("\nFirst dishes:");
-        for (FirstDishes firstDish : firstDishesList) {
-            System.out.println(firstDish.getName() + " - " + firstDish.getPrice() + " $");
-        }
-        System.out.println("\nSecond dishes:");
-        for (SecondDishes secondDish : secondDishesList) {
-            System.out.println(secondDish.getName() + " - " + secondDish.getPrice() + " $");
-        }
-        System.out.println("\nDesserts:");
-        for (Desserts dessert : dessertsList) {
-            System.out.println(dessert.getName() + " - " + dessert.getPrice() + " $");
-        }
-        System.out.println("\nBeverages:");
-        for (Beverage beverage : beverageList) {
-            System.out.println(beverage.getName() + " - " + beverage.getPrice() + " $");
-        }
+
     }
 
 
