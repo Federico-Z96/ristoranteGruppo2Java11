@@ -10,8 +10,8 @@ public enum Type {
     ROSSA("Rossa", "Blend of caramelized and high temperature roasted barley malts and a generous amount of hops"),
     BIONDA("Bionda", "Light beers are made with lightly roasted malts"),
     IPA("Ipa", "Highly alcoholic and hoppy top-fermented beer, traditionally produced with English malts, hops and yeasts"),
-    VINO_ROSSO("WineRed", "Wines composed of red grapes and with pomace"),
-    VINO_BIANCO("WineWhite", "Wines composed of both red and white grapes, in the case of red grapes the pomace is not added to the must");
+    VINO_ROSSO("Red Wine", "Wines composed of red grapes and with pomace"),
+    VINO_BIANCO("White Wine", "Wines composed of both red and white grapes, in the case of red grapes the pomace is not added to the must");
 
 
 

@@ -8,11 +8,11 @@ public  class Main {
     public static void main(String[] args) {
 
         List<Portata> portataList = new ArrayList<>() ;
-        portataList.add(new Beverage("Vino ", Type.VINO_ROSSO, 10));
-        portataList.add(new Beverage("Vino ", Type.VINO_BIANCO, 11));
-        portataList.add(new Beverage("Birra ",Type.BIONDA, 5));
-        portataList.add(new Beverage("Birra ",Type.ROSSA, 7));
-        portataList.add(new Beverage("Birra ",Type.IPA, 7.5));
+        portataList.add(new Beverage("Red Wine ", Type.VINO_ROSSO, 10));
+        portataList.add(new Beverage("White Wine ", Type.VINO_BIANCO, 11));
+        portataList.add(new Beverage("Blonde ",Type.BIONDA, 5));
+        portataList.add(new Beverage("Red ",Type.ROSSA, 7));
+        portataList.add(new Beverage("Ipa ",Type.IPA, 7.5));
         portataList.add(new Appetizer("Sformatino di verdure ", 4.99));
         portataList.add(new Appetizer("Pinzimonio ", 4.50));
         portataList.add(new Appetizer("Verdure pastellate ", 3.50));

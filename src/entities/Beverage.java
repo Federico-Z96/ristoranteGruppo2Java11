@@ -24,5 +24,6 @@ public class Beverage extends Portata {
     @Override
     public void printInfo() {
         super.printInfo();
+        System.out.println(type.getName() + " : " + type.getDescription());
     }
 }
