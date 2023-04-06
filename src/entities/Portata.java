@@ -25,7 +25,6 @@ public abstract class Portata {
         this.price = price;
     }
 
-    //TODO come facciamo a stampare name e price?
     public void printInfo(){
         System.out.println( this.getName() + this.getPrice()+"$");
     };
