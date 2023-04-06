@@ -8,11 +8,11 @@ public  class Main {
     public static void main(String[] args) {
 
         List<Portata> portataList = new ArrayList<>() ;
-        portataList.add(new Beverage("Red Wine ", Type.VINO_ROSSO, 10));
-        portataList.add(new Beverage("White Wine ", Type.VINO_BIANCO, 11));
-        portataList.add(new Beverage("Blonde ",Type.BIONDA, 5));
-        portataList.add(new Beverage("Red ",Type.ROSSA, 7));
-        portataList.add(new Beverage("Ipa ",Type.IPA, 7.5));
+        portataList.add(new Beverage("Chianti ", Type.RED_WINE, 10));
+        portataList.add(new Beverage("Prosecco ", Type.WHITE_WINE, 11));
+        portataList.add(new Beverage("Heinekken ",Type.BLONDE, 5));
+        portataList.add(new Beverage("Red Erik ",Type.RED, 7));
+        portataList.add(new Beverage("Indian Pale Ale ",Type.IPA, 7.5));
         portataList.add(new Appetizer("Sformatino di verdure ", 4.99));
         portataList.add(new Appetizer("Pinzimonio ", 4.50));
         portataList.add(new Appetizer("Verdure pastellate ", 3.50));
@@ -35,7 +35,7 @@ public  class Main {
 
 
         //@TODO qui agguingere tutti gli elementi creati alla lista portate
-        Menu menu = new Menu("Veggy",Type.CARNIVORO,"B. Barbieri",
+        Menu menu = new Menu("Veggy",Type.CARNIVOROUS,"B. Barbieri",
                 portataList);
 
         menu.findMediumPrice();
