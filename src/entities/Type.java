@@ -13,9 +13,6 @@ public enum Type {
     RED_WINE("Red Wine", "Wines composed of red grapes and with pomace"),
     WHITE_WINE("White Wine", "Wines composed of both red and white grapes, in the case of red grapes the pomace is not added to the must");
 
-
-
-
     private String name;
     private String description;
     Type(String name, String description) {

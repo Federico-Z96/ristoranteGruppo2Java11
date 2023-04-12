@@ -13,11 +13,11 @@ public  class Main {
         portataList.add(new Beverage("Heinekken ",Type.BLONDE, 5));
         portataList.add(new Beverage("Red Erik ",Type.RED, 7));
         portataList.add(new Beverage("Indian Pale Ale ",Type.IPA, 7.5));
-        portataList.add(new Appetizer("Sformatino di verdure ", 4.99));
-        portataList.add(new Appetizer("Pinzimonio ", 4.50));
-        portataList.add(new Appetizer("Verdure pastellate ", 3.50));
-        portataList.add(new Appetizer("Ratatouille ", 7.50));
-        portataList.add(new Appetizer("Cavolo Gratinato ", 3.99));
+        portataList.add(new Appetizer("Sformatino di verdure ", 4.99, false, true, false));
+        portataList.add(new Appetizer("Pinzimonio ", 4.50, false, true, true));
+        portataList.add(new Appetizer("Verdure pastellate ", 3.50,true,false,false));
+        portataList.add(new Appetizer("Ratatouille ", 7.50,false,true,true));
+        portataList.add(new Appetizer("Cavolo Gratinato ", 3.99,false,true,false));
         portataList.add(new FirstDishes("Cime di Rapa " , 4.00));
         portataList.add(new FirstDishes("Risotto di funghi " , 4.50));
         portataList.add(new FirstDishes("Passata di Verdure " , 3.00));
