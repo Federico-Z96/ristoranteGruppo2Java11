@@ -7,6 +7,7 @@ import java.util.List;
 public  class Main {
     public static void main(String[] args) {
 
+
         List<Portata> portataList = new ArrayList<>() ;
         portataList.add(new Beverage("Chianti ", Type.RED_WINE, 10));
         portataList.add(new Beverage("Prosecco ", Type.WHITE_WINE, 11));
@@ -38,6 +39,10 @@ public  class Main {
         Menu menu = new Menu("Veggy",Type.CARNIVOROUS,"B. Barbieri",
                 portataList);
 
+        //TODO dare la possibilità di creare più menù e quindi creare una classe ristorante
+        //che avra una lista di menù e altre info primarie, nome, tipo ecc ecc
+
+        menu.addPortata(new Desserts("Babà ", 3.99 ));
         menu.findMediumPrice();
         menu.printMenu();
 

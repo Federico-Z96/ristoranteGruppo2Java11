@@ -1,5 +1,8 @@
 package src.entities;
 
+//TODO tutti gli enumerati : TypeEnum
+
+// questo enum contiene solo i tipi, che saranno gli anneli di congiunzione con tutte le classe
 public enum Type { 
     
     // TODO inserire descrizione e nome leggibile--------TypeEnum

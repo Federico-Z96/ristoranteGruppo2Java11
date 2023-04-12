@@ -5,7 +5,7 @@ package src.entities;
 public class Beverage extends Portata {
     private Type type;
 
-
+    //TODO beerType
 
     public Beverage(String name, Type type, double price) {
         super(name, price);

@@ -1,5 +1,6 @@
 package src.entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Menu {
@@ -12,11 +13,12 @@ public class Menu {
     private Type type;
     private double mediumPrice;
     private String chefName;
-   public Menu( String name,Type type,String chefName,List<Portata> portataList){
+
+    public Menu(String name, Type type, String chefName) {
         this.name = name;
         this.type = type;
         this.chefName = chefName;
-        this.portataList = portataList;
+        this.portataList = new ArrayList<>();
     }
 
     public String getName() {
@@ -51,10 +53,19 @@ public class Menu {
         this.chefName = chefName;
     }
 
-    public List<Portata> getPortataList() {return portataList; }
-    public void setPortataList(List<Portata> portataList) {this.portataList = portataList; }
+    public List<Portata> getPortataList() {
+        return portataList;
+    }
 
-    public void findMediumPrice(){
+    public void addPortata(Portata portata){
+        portataList.add(portata);
+    }
+
+    public void removePortata(Portata portata){
+        portataList.remove(portata);
+    }
+
+    public void findMediumPrice() {
         double totalPrice = 0;
         int itemCount = 0;
         for (Portata portata : portataList) {
@@ -66,12 +77,12 @@ public class Menu {
 
 //TODO accedere sempre ai field nella stessa classe
 
-    public void printMenu(){
-        System.out.println("Menu: "+this.name);
-        System.out.println("Type: "+this.type);
+    public void printMenu() {
+        System.out.println("Menu: " + this.name);
+        System.out.println("Type: " + this.type);
         System.out.println("Description: " + type.getDescription());
-        System.out.println("Created by: "+this.chefName);
-        System.out.println("The medium price is: "+this.mediumPrice+" $");
+        System.out.println("Created by: " + this.chefName);
+        System.out.println("The medium price is: " + this.mediumPrice + " $");
         System.out.println("\nPortate");
         //TODO sistemare
         for (Portata appetizer : portataList) {
@@ -79,7 +90,6 @@ public class Menu {
         }
 
     }
-
 
 
 }

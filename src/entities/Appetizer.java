@@ -4,8 +4,9 @@ public class Appetizer extends Portata {
 
     //TODO personalizziamo le classi, è congelato?ha glutine?
     //non conviene implementarle in portata?
-    //creare enum ingredienti implementando itsglutenfree e itsfrozen?
+    //creare enum ingredienti implementando itsglutenfree e itsfrozen? Si okey va bene, lista di string?
 
+    //TODO facciamo un enumerato degli allergeni
     private boolean itsFrozen;
     private boolean itsGlutenFree;
     private boolean itsLactoseFree;
@@ -23,6 +24,7 @@ public class Appetizer extends Portata {
     @Override
     public void printInfo() {
         super.printInfo();
+        //TODO bisogna stampare anche i campi aggiuntivi
     }
 
 
