@@ -1,42 +1,35 @@
 package src.entities;
 
-
-//TODO fare una super classe Portata per tutte le altre classi
 public class Beverage extends Portata {
-    private Type type;
+    private TypeBeverage type;
 
-    public Beverage(String name, double price, boolean itsFrozen, Allergens allergens, Type type) {
+    public Beverage(String name, double price, boolean itsFrozen, Allergens allergens, TypeBeverage type) {
         super(name, price, itsFrozen, allergens);
         this.type = type;
     }
 
-    public Beverage(String name, double price, boolean itsFrozen, Type type) {
+    public Beverage(String name, double price, boolean itsFrozen, TypeBeverage type) {
         super(name, price, itsFrozen);
         this.type = type;
     }
 
-    public Beverage(String name, double price, Allergens allergens, Type type) {
+    public Beverage(String name, double price, Allergens allergens, TypeBeverage type) {
         super(name, price, allergens);
         this.type = type;
     }
 
-    public Beverage(String name, double price, Type type) {
+    public Beverage(String name, double price, TypeBeverage type) {
         super(name, price);
         this.type = type;
     }
-
-    //TODO beerType
-
-
-    public Type getType() {
+    public TypeBeverage getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(TypeBeverage type) {
         this.type = type;
     }
 
-    //TODO non stampa il tipo che è il field del figlio aggiuntivo
     @Override
     public void printInfo() {
         super.printInfo();

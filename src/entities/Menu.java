@@ -10,11 +10,11 @@ public class Menu {
 
 
     private String name;
-    private Type type;
+    private TypeMenu type;
     private double mediumPrice;
     private String chefName;
 
-    public Menu(String name, Type type, String chefName) {
+    public Menu(String name, TypeMenu type, String chefName) {
         this.name = name;
         this.type = type;
         this.chefName = chefName;
@@ -29,11 +29,11 @@ public class Menu {
         this.name = name;
     }
 
-    public Type getType() {
+    public TypeMenu getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(TypeMenu type) {
         this.type = type;
     }
 
