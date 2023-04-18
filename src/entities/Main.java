@@ -1,12 +1,16 @@
 package src.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public  class Main {
     public static void main(String[] args) {
 
-        //TODO dare la possibilità di creare più menù e quindi creare una classe ristorante
-        //che avra una lista di menù e altre info primarie, nome, tipo ecc ecc
-
         Menu menu = new Menu("Veggy", TypeMenu.VEGAN,"B. Barbieri");
+
+        List<Menu> listaMenu = new ArrayList<>();
+        listaMenu.add(menu);
+        Ristorante ristorante = new Ristorante("Ristorante da Michele","via M. Mangiacotti", "Michele Mangiacotti", listaMenu );
 
         menu.addPortata(new Beverage("Chianti", 10, TypeBeverage.RED_WINE));
         menu.addPortata(new Beverage("Prosecco", 1, TypeBeverage.WHITE_WINE));
@@ -33,8 +37,15 @@ public  class Main {
         menu.addPortata(new Desserts("Semifreddo mandorla", 2.99,TypeDessert.PARFAIT));
         menu.addPortata(new Desserts("Gelato al Babà", 3.99,TypeDessert.FROZEN ));
         menu.findMediumPrice();
+
+        ristorante.printRestaurants();
         menu.printMenu();
+
+
     }
+
+
+
 }
 
 
