@@ -74,9 +74,6 @@ public class Menu {
         }
         this.mediumPrice = Math.round(totalPrice / itemCount * 100.0) / 100.0;
     }
-
-//TODO accedere sempre ai field nella stessa classe
-
     public void printMenu() {
         System.out.println("Menu: " + this.name);
         System.out.println("Type: " + this.type);
@@ -84,9 +81,8 @@ public class Menu {
         System.out.println("Created by: " + this.chefName);
         System.out.println("The medium price is: " + this.mediumPrice + " $");
         System.out.println("\nPortate");
-        //TODO sistemare
-        for (Portata appetizer : portataList) {
-            appetizer.printInfo();
+        for (Portata portata : portataList) {
+            portata.printInfo();
             System.out.println();
         }
 

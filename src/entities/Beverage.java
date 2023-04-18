@@ -13,7 +13,7 @@ public class Beverage extends Portata {
         this.type = type;
     }
 
-    public Beverage(String name, double price, Allergens allergens, TypeBeverage type) {
+    public Beverage(String name, double price, TypeBeverage type,Allergens allergens) {
         super(name, price, allergens);
         this.type = type;
     }
@@ -33,6 +33,6 @@ public class Beverage extends Portata {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.println(type.getName() + " : " + type.getDescription());
+        System.out.print(type.getName() + " : " + type.getDescription()+"\n");
     }
 }
