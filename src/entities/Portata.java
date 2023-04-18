@@ -62,7 +62,7 @@ public abstract class Portata {
     }
 
     public void printInfo(){
-        System.out.println( this.getName() + this.getPrice()+"$");
+        System.out.println( this.getName() + " : " + this.getPrice()+"$");
     };
 
 }

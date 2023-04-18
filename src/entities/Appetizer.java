@@ -22,7 +22,6 @@ public class Appetizer extends Portata {
     @Override
     public void printInfo() {
         super.printInfo();
-        //TODO bisogna stampare anche i campi aggiuntivi
     }
 
 
