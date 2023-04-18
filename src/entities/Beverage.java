@@ -5,12 +5,28 @@ package src.entities;
 public class Beverage extends Portata {
     private Type type;
 
-    //TODO beerType
+    public Beverage(String name, double price, boolean itsFrozen, Allergens allergens, Type type) {
+        super(name, price, itsFrozen, allergens);
+        this.type = type;
+    }
 
-    public Beverage(String name, Type type, double price) {
+    public Beverage(String name, double price, boolean itsFrozen, Type type) {
+        super(name, price, itsFrozen);
+        this.type = type;
+    }
+
+    public Beverage(String name, double price, Allergens allergens, Type type) {
+        super(name, price, allergens);
+        this.type = type;
+    }
+
+    public Beverage(String name, double price, Type type) {
         super(name, price);
         this.type = type;
     }
+
+    //TODO beerType
+
 
     public Type getType() {
         return type;

@@ -87,6 +87,7 @@ public class Menu {
         //TODO sistemare
         for (Portata appetizer : portataList) {
             appetizer.printInfo();
+            System.out.println();
         }
 
     }

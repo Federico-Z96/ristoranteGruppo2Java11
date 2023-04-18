@@ -13,17 +13,16 @@ public  class Main {
         //TODO dare la possibilità di creare più menù e quindi creare una classe ristorante
         //che avra una lista di menù e altre info primarie, nome, tipo ecc ecc
 
-        menu.addPortata(new Desserts("Babà ", 3.99 ));
-        menu.addPortata(new Beverage("Chianti ", Type.RED_WINE, 10));
-        menu.addPortata(new Beverage("Prosecco ", Type.WHITE_WINE, 11));
-        menu.addPortata(new Beverage("Heinekken ",Type.BLONDE, 5));
-        menu.addPortata(new Beverage("Red Erik ",Type.RED, 7));
-        menu.addPortata(new Beverage("Indian Pale Ale ",Type.IPA, 7.5));
-        menu.addPortata(new Appetizer("Sformatino di verdure ", 4.99, false, true, false));
-        menu.addPortata(new Appetizer("Pinzimonio ", 4.50, false, true, true));
-        menu.addPortata(new Appetizer("Verdure pastellate ", 3.50,true,false,false));
-        menu.addPortata(new Appetizer("Ratatouille ", 7.50,false,true,true));
-        menu.addPortata(new Appetizer("Cavolo Gratinato ", 3.99,false,true,false));
+        menu.addPortata(new Beverage("Chianti ", 10, Type.RED_WINE));
+        menu.addPortata(new Beverage("Prosecco ", 1, Type.WHITE_WINE));
+        menu.addPortata(new Beverage("Heinekken ", 5,Type.BLONDE));
+        menu.addPortata(new Beverage("Red Erik ",7,Type.RED));
+        menu.addPortata(new Beverage("Indian Pale Ale ",7.5,Type.IPA));
+        menu.addPortata(new Appetizer("Sformatino di verdure ", 4.99, false));
+        menu.addPortata(new Appetizer("Pinzimonio ", 4.50, false));
+        menu.addPortata(new Appetizer("Verdure pastellate ", 3.50,true));
+        menu.addPortata(new Appetizer("Ratatouille ", 7.50,false));
+        menu.addPortata(new Appetizer("Cavolo Gratinato ", 3.99,false));
         menu.addPortata(new FirstDishes("Cime di Rapa " , 4.00));
         menu.addPortata(new FirstDishes("Risotto di funghi " , 4.50));
         menu.addPortata(new FirstDishes("Passata di Verdure " , 3.00));
