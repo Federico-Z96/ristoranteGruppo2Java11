@@ -85,11 +85,10 @@ public class Menu {
         System.out.println("The medium price is: " + this.mediumPrice + " $");
         System.out.println("\nPortate");
         //TODO sistemare
-        for (Portata appetizer : portataList) {
-            appetizer.printInfo();
+        for (Portata menu : portataList) {
+            menu.printInfo();
             System.out.println();
         }
-
     }
 
 
