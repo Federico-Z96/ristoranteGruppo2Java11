@@ -6,6 +6,7 @@ public abstract class Portata {
     private boolean itsFrozen;
     private Allergens allergens;
 
+    //TODO eliminiamo tutti i costruttori
     public Portata(String name, double price , boolean itsFrozen, Allergens allergens) {
         this.name = name;
         this.price = price;

@@ -2,6 +2,7 @@ package src.entities;
 
 public class FirstDishes extends Portata {
 
+    //TODO inseriamo parametrizzazioni ad esempio, èprecotto
 
     public FirstDishes(String name, double price, boolean itsFrozen, Allergens allergens) {
         super(name, price, itsFrozen, allergens);
