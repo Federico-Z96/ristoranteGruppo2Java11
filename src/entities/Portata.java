@@ -3,9 +3,9 @@ package src.entities;
 public abstract class Portata {
     private String name;
     private double price;
-    private AllergensEnum allergens;
+    private TypeAllergensEnum allergens;
 
-    public Portata(String name, double price, AllergensEnum allergens) {
+    public Portata(String name, double price, TypeAllergensEnum allergens) {
         this.name = name;
         this.price = price;
         this.allergens = allergens;
@@ -32,9 +32,11 @@ public abstract class Portata {
 
 
     public void printInfo(){
-        System.out.println( this.getName() + " : " + this.getPrice()+"$");
-        if (allergens != null) {
+        System.out.println( this.getName() + " : " + this.getPrice()+"€");
+        if (allergens != TypeAllergensEnum.NONE) {
             System.out.println("ATTENTION: This plate contains " + allergens);
+        }else {
+            System.out.println("This plate it's allergens free");
         }
     };
 

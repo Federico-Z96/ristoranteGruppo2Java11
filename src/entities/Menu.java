@@ -81,17 +81,13 @@ public class Menu {
         System.out.println("Type: " + this.type);
         System.out.println("Description: " + type.getDescription());
         System.out.println("Created by: " + this.chefName);
-        System.out.println("The medium price is: " + this.mediumPrice + " $");
+        System.out.println("The medium price is: " + this.mediumPrice + " €");
         System.out.println("\nPortate");
-
-        //TODO sistemare
         for (Portata menu : portataList) {
             menu.printInfo();
-
-            for (Portata portata : portataList) {
-                portata.printInfo();
-                System.out.println();
-            }
+            System.out.println("");
         }
+        System.out.println("\n"+"END");
+        System.out.println("For every particular request you can ask it to our waiters");
     }
 }

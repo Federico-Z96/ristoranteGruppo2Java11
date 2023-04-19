@@ -7,7 +7,7 @@ public class FirstDishes extends Portata {
 
     //TODO inseriamo parametrizzazioni ad esempio, èprecotto
 
-    public FirstDishes(String name, double price, boolean itsFrozen,AllergensEnum allergens) {
+    public FirstDishes(String name, double price, boolean itsFrozen, TypeAllergensEnum allergens) {
         super(name, price, allergens);
         this.itsFrozen = itsFrozen;
     }

@@ -1,7 +1,8 @@
 package src.entities;
 
 
-public enum AllergensEnum {
+public enum TypeAllergensEnum {
+
 
     //TODO come convenzione si chiamano enum nel finale: nomeClasseEnum --- typeEnum
     //TODO chiedere ai tutor come gestire gli enum perchè gli enum sono un anagrafica e quindi e field
@@ -15,7 +16,7 @@ public enum AllergensEnum {
 
    private final String name;
 
-    AllergensEnum(String name) {
+    TypeAllergensEnum(String name) {
         this.name = name;
     }
 

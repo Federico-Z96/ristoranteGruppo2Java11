@@ -3,7 +3,7 @@ package src.entities;
 public class Beverage extends Portata {
     private TypeBeverage type;
 
-    public Beverage(String name, double price,AllergensEnum allergens,TypeBeverage type) {
+    public Beverage(String name, double price, TypeAllergensEnum allergens, TypeBeverage type) {
         super(name, price, allergens);
         this.type = type;
     }

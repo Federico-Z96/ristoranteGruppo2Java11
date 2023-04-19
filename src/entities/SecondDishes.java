@@ -3,7 +3,7 @@ package src.entities;
 public class SecondDishes extends Portata {
     private boolean itsFrozen;
 
-    public SecondDishes(String name, double price, boolean itsFrozen,AllergensEnum allergens) {
+    public SecondDishes(String name, double price, boolean itsFrozen, TypeAllergensEnum allergens) {
         super(name, price,allergens);
         this.itsFrozen = itsFrozen;
 
