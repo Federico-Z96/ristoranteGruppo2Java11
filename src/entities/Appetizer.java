@@ -2,20 +2,15 @@ package src.entities;
 
 public class Appetizer extends Portata {
     private boolean itsFrozen;
-    private AllergensEnum allergens;
 
-    public Appetizer(String name, double price) {
-        super(name, price);
+    public Appetizer(String name, double price,AllergensEnum allergens, boolean itsFrozen) {
+        super(name, price, allergens);
         this.itsFrozen = itsFrozen;
-        this.allergens = allergens;
     }
 
     @Override
     public void printInfo() {
         super.printInfo();
-        if (allergens != null) {
-            System.out.println("ATTENTION: This plate contains " + allergens);
-        }
     }
 
 
