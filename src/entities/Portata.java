@@ -63,6 +63,9 @@ public abstract class Portata {
 
     public void printInfo(){
         System.out.println( this.getName() + " : " + this.getPrice()+"$");
+        if (allergens != null) {
+            System.out.println("ATTENTION: This plate contains " + allergens);
+        }
     };
 
 }

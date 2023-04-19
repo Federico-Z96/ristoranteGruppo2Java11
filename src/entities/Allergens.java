@@ -3,7 +3,6 @@ package src.entities;
 public enum Allergens {
     GLUTEN,
     LACTOS,
-    CRUSTACEAND_AND_DERIVATES,
     EGGS_AND_DERIVATES,
     FISH_AND_DERIVATES,
     PEANUTS_AND_DERIVATES,
