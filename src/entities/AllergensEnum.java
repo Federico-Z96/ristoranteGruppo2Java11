@@ -1,6 +1,6 @@
 package src.entities;
 
-public enum Allergens {
+public enum AllergensEnum {
     GLUTEN,
     LACTOS,
     EGGS_AND_DERIVATES,

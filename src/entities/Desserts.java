@@ -4,14 +4,9 @@ public class Desserts extends Portata {
 
     private TypeDessert dessertsType;
 
-    public Desserts(String name, double price, Allergens allergens, TypeDessert dessertsType) {
-        super(name, price, allergens);
-        this.dessertsType=dessertsType;
-    }
-
-    public Desserts(String name, double price,TypeDessert dessertsType) {
+    public Desserts(String name, double price, AllergensEnum allergens, TypeDessert dessertsType) {
         super(name, price);
-        this.dessertsType = dessertsType;
+        this.dessertsType=dessertsType;
     }
 
     public TypeDessert getDessertsType() {
