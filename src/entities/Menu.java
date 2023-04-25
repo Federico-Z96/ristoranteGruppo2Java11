@@ -6,10 +6,7 @@ import java.util.List;
 public class Menu {
 
     private List<Appetizer> appetizerList;
-
     private List<Portata> portataList;
-
-
     private String name;
     private TypeMenu type;
     private double mediumPrice;
