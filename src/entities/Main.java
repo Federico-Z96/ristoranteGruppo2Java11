@@ -1,7 +1,9 @@
 package src.entities;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public  class Main {
     public static void main(String[] args) {
@@ -40,6 +42,12 @@ public  class Main {
 
         ristorante.printRestaurants();
         menu.printMenu();
+
+        Client client1 = new Client("Giulio", "giulio@gmail.com", "+393455566777");
+        Map<Client,TableEnum> reservations = new HashMap<Client,TableEnum>();
+        reservations.put(client1,TableEnum.SEVEN);
+
+
 
     }
 
