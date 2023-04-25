@@ -1,18 +1,15 @@
 package src.entities;
 
-public abstract class Portata {
+public abstract class Meal {
     private String name;
     private double price;
     private TypeAllergensEnum allergens;
 
-    public Portata(String name, double price, TypeAllergensEnum allergens) {
+    public Meal(String name, double price, TypeAllergensEnum allergens) {
         this.name = name;
         this.price = price;
         this.allergens = allergens;
     }
-
-
-    //TODO eliminiamo tutti i costruttori
 
     public String getName() {
         return name;

@@ -1,6 +1,6 @@
 package src.entities;
 
-public class SecondDishes extends Portata {
+public class SecondDishes extends Meal {
     private boolean itsFrozen;
 
     public SecondDishes(String name, double price, boolean itsFrozen, TypeAllergensEnum allergens) {
@@ -8,8 +8,6 @@ public class SecondDishes extends Portata {
         this.itsFrozen = itsFrozen;
 
     }
-
-    //TODO sistamare tutte le classi
     @Override
     public void printInfo() {
        super.printInfo();

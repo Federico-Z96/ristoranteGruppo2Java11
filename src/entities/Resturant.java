@@ -3,13 +3,13 @@ package src.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Ristorante {
+public class Resturant {
   private String name;
   private String address;
   private String owner;
   private List<Menu> menuList;
 
-    public Ristorante(String name, String address, String owner, List<Menu> menuList) {
+    public Resturant(String name, String address, String owner, List<Menu> menuList) {
         this.name = name;
         this.address = address;
         this.owner = owner;

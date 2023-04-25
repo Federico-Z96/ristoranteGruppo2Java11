@@ -1,6 +1,6 @@
 package src.entities;
 
-public class Beverage extends Portata {
+public class Beverage extends Meal {
     private TypeBeverage type;
 
     public Beverage(String name, double price, TypeAllergensEnum allergens, TypeBeverage type) {

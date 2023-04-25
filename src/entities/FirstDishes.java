@@ -1,6 +1,6 @@
 package src.entities;
 
-public class FirstDishes extends Portata {
+public class FirstDishes extends Meal {
 
     private boolean itsFrozen;
 

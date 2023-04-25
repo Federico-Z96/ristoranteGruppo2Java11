@@ -6,7 +6,7 @@ import java.util.List;
 public class Menu {
 
     private List<Appetizer> appetizerList;
-    private List<Portata> portataList;
+    private List<Meal> portataList;
     private String name;
     private TypeMenu type;
     private double mediumPrice;
@@ -51,22 +51,22 @@ public class Menu {
         this.chefName = chefName;
     }
 
-    public List<Portata> getPortataList() {
+    public List<Meal> getPortataList() {
         return portataList;
     }
 
-    public void addPortata(Portata portata) {
+    public void addPortata(Meal portata) {
         portataList.add(portata);
     }
 
-    public void removePortata(Portata portata) {
+    public void removePortata(Meal portata) {
         portataList.remove(portata);
     }
 
     public void findMediumPrice() {
         double totalPrice = 0;
         int itemCount = 0;
-        for (Portata portata : portataList) {
+        for (Meal portata : portataList) {
             totalPrice += portata.getPrice();
             itemCount++;
         }
@@ -80,7 +80,7 @@ public class Menu {
         System.out.println("Created by: " + this.chefName);
         System.out.println("The medium price is: " + this.mediumPrice + " €");
         System.out.println("\nPortate");
-        for (Portata menu : portataList) {
+        for (Meal menu : portataList) {
             menu.printInfo();
             System.out.println("");
         }

@@ -1,6 +1,6 @@
 package src.entities;
 
-public class Appetizer extends Portata {
+public class Appetizer extends Meal {
     private boolean itsFrozen;
 
     public Appetizer(String name, double price, TypeAllergensEnum allergens, boolean itsFrozen) {

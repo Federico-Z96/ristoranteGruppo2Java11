@@ -1,6 +1,6 @@
 package src.entities;
 
-public class Desserts extends Portata {
+public class Desserts extends Meal {
 
     private TypeDessert dessertsType;
 
@@ -16,8 +16,6 @@ public class Desserts extends Portata {
     public void setDessertsType(TypeDessert dessertsType) {
         this.dessertsType = dessertsType;
     }
-
-    //TODO inseriamo qualcosa per indicare la grandezza del dolce, livello zuccheri, descrizione?
 
     @Override
     public void printInfo() {

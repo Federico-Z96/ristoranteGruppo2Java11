@@ -12,7 +12,7 @@ public  class Main {
 
         List<Menu> listaMenu = new ArrayList<>();
         listaMenu.add(menu);
-        Ristorante ristorante = new Ristorante("Ristorante da Michele","via M. Mangiacotti", "Michele Mangiacotti", listaMenu );
+        Resturant ristorante = new Resturant("Ristorante da Michele","via M. Mangiacotti", "Michele Mangiacotti", listaMenu );
 
         menu.addPortata(new Beverage("Chianti", 10, TypeAllergensEnum.NONE, TypeBeverage.RED_WINE));
         menu.addPortata(new Beverage("Prosecco", 1, TypeAllergensEnum.NONE, TypeBeverage.WHITE_WINE));
