@@ -1,5 +1,7 @@
 package src.entities;
 
+import static src.entities.Color.ANSI_PURPLE;
+
 public class Beverage extends Meal {
     private TypeBeverage type;
 
@@ -11,6 +13,6 @@ public class Beverage extends Meal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.print(type.getName() + " : " + type.getDescription()+"\n");
+        System.out.print(ANSI_PURPLE + type.getName() + " : " + type.getDescription()+"\n");
     }
 }

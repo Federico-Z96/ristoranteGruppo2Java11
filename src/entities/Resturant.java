@@ -3,6 +3,9 @@ package src.entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import static src.entities.Color.ANSI_GREEN_BACKGROUND;
+import static src.entities.Color.ANSI_RESET;
+
 public class Resturant {
   private String name;
   private String address;
@@ -56,8 +59,8 @@ public class Resturant {
     }
 
     public void printRestaurants(){
-        System.out.println("Restaurant : " + this.name);
+        System.out.println(ANSI_GREEN_BACKGROUND +"Restaurant : " + this.name );
         System.out.println("Address : " + this.address);
-        System.out.println("Owner of the best pizza in Napoli is : " + this.owner + " \n");
+        System.out.println("Owner of the best pizza in Napoli is : " + this.owner + " \n"+ ANSI_RESET);
     }
 }

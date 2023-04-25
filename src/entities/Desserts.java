@@ -1,5 +1,8 @@
 package src.entities;
 
+import static src.entities.Color.ANSI_RESET;
+import static src.entities.Color.ANSI_YELLOW;
+
 public class Desserts extends Meal {
 
     private TypeDessert dessertsType;
@@ -20,6 +23,6 @@ public class Desserts extends Meal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.println(dessertsType.getDescription());
+        System.out.println(ANSI_YELLOW + dessertsType.getDescription() + ANSI_RESET);
     }
 }

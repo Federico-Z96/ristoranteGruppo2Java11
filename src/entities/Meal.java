@@ -1,5 +1,7 @@
 package src.entities;
 
+import static src.entities.Color.*;
+
 public abstract class Meal {
     private String name;
     private double price;
@@ -29,11 +31,11 @@ public abstract class Meal {
 
 
     public void printInfo(){
-        System.out.println( this.getName() + " : " + this.getPrice()+"€");
+        System.out.println( ANSI_WHITE_BACKGROUND + this.getName() + " : " + this.getPrice()+ "€" + ANSI_RESET);
         if (allergens != TypeAllergensEnum.NONE) {
-            System.out.println("ATTENTION: This plate contains " + allergens);
+            System.out.println(ANSI_RED_BACKGROUND +"ATTENTION: This plate contains " + allergens + ANSI_RESET);
         }else {
-            System.out.println("This plate it's allergens free");
+            System.out.println(ANSI_WHITE_BACKGROUND + "This plate it's allergens free" + ANSI_RESET);
         }
     };
 

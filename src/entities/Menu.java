@@ -3,6 +3,8 @@ package src.entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import static src.entities.Color.*;
+
 public class Menu {
 
     private List<Appetizer> appetizerList;
@@ -74,17 +76,16 @@ public class Menu {
     }
 
     public void printMenu() {
-        System.out.println("Menu: " + this.name);
-        System.out.println("Type: " + this.type);
+        System.out.println(ANSI_CYAN_BACKGROUND +"Type: " + this.type);
         System.out.println("Description: " + type.getDescription());
         System.out.println("Created by: " + this.chefName);
-        System.out.println("The medium price is: " + this.mediumPrice + " €");
-        System.out.println("\nPortate");
+        System.out.println("The medium price is: " + this.mediumPrice + " €" + "\n"+ ANSI_RESET );
+        System.out.println(ANSI_PURPLE_BACKGROUND + ANSI_BLACK + "Portate" + "\n" + ANSI_RESET );
         for (Meal menu : portataList) {
             menu.printInfo();
             System.out.println("");
         }
-        System.out.println("\n"+"END");
-        System.out.println("For every particular request you can ask it to our waiters");
+        System.out.println("\n" + ANSI_CYAN_BACKGROUND + "END");
+        System.out.println("For every particular request you can ask it to our waiters"+ "\n" +ANSI_RESET);
     }
 }
