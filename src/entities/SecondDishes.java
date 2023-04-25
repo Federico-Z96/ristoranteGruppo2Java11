@@ -3,7 +3,9 @@ package src.entities;
 public class SecondDishes extends Meal {
     private boolean itsFrozen;
 
-    public SecondDishes(String name, double price, boolean itsFrozen, TypeAllergensEnum allergens) {
+    private boolean sauce;
+
+    public SecondDishes(String name, double price, boolean itsFrozen, boolean sauce, TypeAllergensEnum allergens) {
         super(name, price,allergens);
         this.itsFrozen = itsFrozen;
 
