@@ -3,8 +3,8 @@ package src.entities;
 import src.entities.enumeration.TypeAllergensEnum;
 import src.entities.enumeration.TypeDessert;
 
-import static src.entities.Color.ANSI_RESET;
-import static src.entities.Color.ANSI_YELLOW;
+import static src.entities.enumeration.ColorEnum.ANSI_RESET;
+import static src.entities.enumeration.ColorEnum.ANSI_YELLOW;
 
 public class Desserts extends Meal {
 
@@ -26,6 +26,6 @@ public class Desserts extends Meal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.println(ANSI_YELLOW + dessertsType.getDescription() + ANSI_RESET);
+        System.out.println(ANSI_YELLOW.getCode() + dessertsType.getDescription() + ANSI_RESET.getCode());
     }
 }

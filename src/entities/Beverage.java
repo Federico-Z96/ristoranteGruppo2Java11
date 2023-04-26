@@ -3,7 +3,7 @@ package src.entities;
 import src.entities.enumeration.TypeAllergensEnum;
 import src.entities.enumeration.TypeBeverage;
 
-import static src.entities.Color.ANSI_PURPLE;
+import static src.entities.enumeration.ColorEnum.ANSI_PURPLE;
 
 public class Beverage extends Meal {
     private TypeBeverage type;
@@ -16,6 +16,6 @@ public class Beverage extends Meal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.print(ANSI_PURPLE + type.getName() + " : " + type.getDescription()+"\n");
+        System.out.print(ANSI_PURPLE.getCode() + type.getName() + " : " + type.getDescription()+"\n");
     }
 }

@@ -1,11 +1,12 @@
 package src.entities;
 
+import src.entities.enumeration.ColorEnum;
 import src.entities.enumeration.TypeMenu;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static src.entities.Color.*;
+import static src.entities.enumeration.ColorEnum.*;
 
 public class Menu {
 
@@ -79,16 +80,16 @@ public class Menu {
     }
 
     public void printMenu() {
-        System.out.println(ANSI_CYAN_BACKGROUND +"Type: " + this.type);
+        System.out.println(ANSI_CYAN_BACKGROUND.getCode() +"Type: " + this.type);
         System.out.println("Description: " + type.getDescription());
         System.out.println("Created by: " + this.chefName);
-        System.out.println("The medium price is: " + this.mediumPrice + " €" + "\n"+ ANSI_RESET );
-        System.out.println(ANSI_PURPLE_BACKGROUND + ANSI_BLACK + "Portate" + "\n" + ANSI_RESET );
+        System.out.println("The medium price is: " + this.mediumPrice + " €" + "\n"+ ANSI_RESET.getCode() );
+        System.out.println(ANSI_PURPLE_BACKGROUND.getCode() + ANSI_BLACK.getCode() + "Portate" + "\n" + ANSI_RESET.getCode() );
         for (Meal meal : portataList) {
             meal.printInfo();
             System.out.println("");
         }
-        System.out.println("\n" + ANSI_CYAN_BACKGROUND + "END");
-        System.out.println("For every particular request you can ask it to our waiters"+ "\n" +ANSI_RESET);
+        System.out.println("\n" + ANSI_CYAN_BACKGROUND.getCode() + "END");
+        System.out.println("For every particular request you can ask it to our waiters"+ "\n" +ANSI_RESET.getCode());
     }
 }

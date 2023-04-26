@@ -2,7 +2,7 @@ package src.entities;
 
 import src.entities.enumeration.TypeAllergensEnum;
 
-import static src.entities.Color.*;
+import static src.entities.enumeration.ColorEnum.*;
 
 public abstract class Meal {
     private String name;
@@ -33,11 +33,11 @@ public abstract class Meal {
 
 
     public void printInfo(){
-        System.out.println( ANSI_WHITE_BACKGROUND + this.getName() + " : " + this.getPrice()+ "€" + ANSI_RESET);
+        System.out.println( ANSI_WHITE_BACKGROUND.getCode() + this.getName() + " : " + this.getPrice()+ "€" + ANSI_RESET.getCode());
         if (allergens != TypeAllergensEnum.NONE) {
-            System.out.println(ANSI_RED_BACKGROUND +"ATTENTION: This plate contains " + allergens + ANSI_RESET);
+            System.out.println(ANSI_RED_BACKGROUND.getCode() +"ATTENTION: This plate contains " + allergens + ANSI_RESET.getCode());
         }else {
-            System.out.println(ANSI_WHITE_BACKGROUND + "This plate it's allergens free" + ANSI_RESET);
+            System.out.println(ANSI_WHITE_BACKGROUND.getCode() + "This plate it's allergens free" + ANSI_RESET.getCode());
         }
     };
 

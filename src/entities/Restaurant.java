@@ -3,18 +3,17 @@ package src.entities;
 import java.util.ArrayList;
 import java.util.List;
 
-import static src.entities.Color.ANSI_GREEN_BACKGROUND;
-import static src.entities.Color.ANSI_RESET;
+import static src.entities.enumeration.ColorEnum.ANSI_GREEN_BACKGROUND;
+import static src.entities.enumeration.ColorEnum.ANSI_RESET;
 
-public class Resturant {
+public class Restaurant {
 
-    //TODO sistemare nome
   private String name;
   private String address;
   private String owner;
   private List<Menu> menuList;
 
-    public Resturant(String name, String address, String owner, List<Menu> menuList) {
+    public Restaurant(String name, String address, String owner, List<Menu> menuList) {
         this.name = name;
         this.address = address;
         this.owner = owner;
@@ -61,8 +60,8 @@ public class Resturant {
     }
 
     public void printRestaurants(){
-        System.out.println(ANSI_GREEN_BACKGROUND +"Restaurant : " + this.name );
+        System.out.println(ANSI_GREEN_BACKGROUND.getCode() +"Restaurant : " + this.name );
         System.out.println("Address : " + this.address);
-        System.out.println("Owner of the best pizza in Napoli is : " + this.owner + " \n"+ ANSI_RESET);
+        System.out.println("Owner of the best pizza in Napoli is : " + this.owner + " \n"+ ANSI_RESET.getCode());
     }
 }
