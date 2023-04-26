@@ -1,4 +1,4 @@
-package src.entities;
+package src.entities.enumeration;
 public enum TypeMenu {
 
     CARNIVOROUS("Carnivorous", "with meals and vegetable"),

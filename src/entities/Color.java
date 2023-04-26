@@ -1,6 +1,9 @@
 package src.entities;
 
 public class Color {
+
+   //TODO questo va fatto come enum
+
     public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m";
     public static final String ANSI_RED_BACKGROUND = "\u001B[41m";
     public static final String ANSI_GREEN_BACKGROUND = "\u001B[42m";

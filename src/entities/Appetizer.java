@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.entities.enumeration.TypeAllergensEnum;
+
 public class Appetizer extends Meal {
     private boolean itsFrozen;
 
@@ -8,6 +10,8 @@ public class Appetizer extends Meal {
         this.itsFrozen = itsFrozen;
     }
 
+
+    //TODO i field aggiuntivi ?
     @Override
     public void printInfo() {
         super.printInfo();

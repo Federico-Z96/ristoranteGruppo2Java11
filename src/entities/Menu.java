@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.entities.enumeration.TypeMenu;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +9,7 @@ import static src.entities.Color.*;
 
 public class Menu {
 
+    //TODO rimuovere codice morto
     private List<Appetizer> appetizerList;
     private List<Meal> portataList;
     private String name;
@@ -81,8 +84,8 @@ public class Menu {
         System.out.println("Created by: " + this.chefName);
         System.out.println("The medium price is: " + this.mediumPrice + " €" + "\n"+ ANSI_RESET );
         System.out.println(ANSI_PURPLE_BACKGROUND + ANSI_BLACK + "Portate" + "\n" + ANSI_RESET );
-        for (Meal menu : portataList) {
-            menu.printInfo();
+        for (Meal meal : portataList) {
+            meal.printInfo();
             System.out.println("");
         }
         System.out.println("\n" + ANSI_CYAN_BACKGROUND + "END");

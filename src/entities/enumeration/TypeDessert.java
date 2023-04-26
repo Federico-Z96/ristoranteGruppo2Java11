@@ -1,4 +1,4 @@
-package src.entities;
+package src.entities.enumeration;
 
 public enum TypeDessert {
     CAKE("A slice of best cakes"),

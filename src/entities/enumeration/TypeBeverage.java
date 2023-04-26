@@ -1,4 +1,4 @@
-package src.entities;
+package src.entities.enumeration;
 
 public enum TypeBeverage {
     RED("Red", "Blend of caramelized and high temperature roasted barley malts and a generous amount of hops"),

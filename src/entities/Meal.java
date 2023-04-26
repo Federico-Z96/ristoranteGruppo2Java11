@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.entities.enumeration.TypeAllergensEnum;
+
 import static src.entities.Color.*;
 
 public abstract class Meal {

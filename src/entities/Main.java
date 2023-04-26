@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.entities.enumeration.*;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -33,7 +35,7 @@ public  class Main {
         menu.addPortata(new SecondDishes("Involtini di primavera",  12.99,false, true,TypeAllergensEnum.GLUTEN));
         menu.addPortata(new SecondDishes("Tofu in salsa di soia", 6.99,false, true,TypeAllergensEnum.NONE));
         menu.addPortata(new SecondDishes("Millefoglie di verdure",9.99 ,false, false,TypeAllergensEnum.GLUTEN));
-        menu.addPortata(new Desserts("Tiramisù", 7.99, TypeAllergensEnum.LACTOS,TypeDessert.SPOON_DESSERT));
+        menu.addPortata(new Desserts("Tiramisù", 7.99, TypeAllergensEnum.LACTOS, TypeDessert.SPOON_DESSERT));
         menu.addPortata(new Desserts("Torta di mele", 6.99, TypeAllergensEnum.GLUTEN,TypeDessert.CAKE));
         menu.addPortata(new Desserts("Crostata di mirtilli", 5.99, TypeAllergensEnum.GLUTEN,TypeDessert.CAKE));
         menu.addPortata(new Desserts("Semifreddo mandorla", 2.99, TypeAllergensEnum.LACTOS,TypeDessert.PARFAIT));
@@ -44,7 +46,7 @@ public  class Main {
         menu.printMenu();
 
         Client client1 = new Client("Giulio", "giulio@gmail.com", "+393455566777");
-        Map<Client,TableEnum> reservations = new HashMap<Client,TableEnum>();
+        Map<Client, TableEnum> reservations = new HashMap<Client,TableEnum>();
         reservations.put(client1,TableEnum.SEVEN);
 
 

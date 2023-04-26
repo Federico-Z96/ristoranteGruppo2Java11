@@ -7,6 +7,8 @@ import static src.entities.Color.ANSI_GREEN_BACKGROUND;
 import static src.entities.Color.ANSI_RESET;
 
 public class Resturant {
+
+    //TODO sistemare nome
   private String name;
   private String address;
   private String owner;

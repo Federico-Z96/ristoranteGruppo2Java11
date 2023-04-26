@@ -1,5 +1,8 @@
 package src.entities;
 
+import src.entities.enumeration.TypeAllergensEnum;
+import src.entities.enumeration.TypeDessert;
+
 import static src.entities.Color.ANSI_RESET;
 import static src.entities.Color.ANSI_YELLOW;
 

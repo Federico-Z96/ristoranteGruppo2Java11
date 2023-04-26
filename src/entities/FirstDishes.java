@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.entities.enumeration.TypeAllergensEnum;
+
 public class FirstDishes extends Meal {
 
     private boolean itsFrozen;
@@ -13,6 +15,7 @@ public class FirstDishes extends Meal {
         this.itsFrozen = itsFrozen;
     }
 
+    //TODO potete anche fare un metodo che prende un colore in input
     @Override
     public void printInfo() {
         super.printInfo();

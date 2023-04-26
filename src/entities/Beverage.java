@@ -1,5 +1,8 @@
 package src.entities;
 
+import src.entities.enumeration.TypeAllergensEnum;
+import src.entities.enumeration.TypeBeverage;
+
 import static src.entities.Color.ANSI_PURPLE;
 
 public class Beverage extends Meal {

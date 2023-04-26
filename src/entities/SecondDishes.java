@@ -1,5 +1,7 @@
 package src.entities;
 
+import src.entities.enumeration.TypeAllergensEnum;
+
 public class SecondDishes extends Meal {
     private boolean itsFrozen;
 
