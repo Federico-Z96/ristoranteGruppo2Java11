@@ -11,7 +11,7 @@ public class SecondDishes extends Meal {
     public SecondDishes(String name, double price, boolean itsFrozen, boolean sauce, TypeAllergensEnum allergens) {
         super(name, price,allergens);
         this.itsFrozen = itsFrozen;
-
+        this.sauce = sauce;
     }
     @Override
     public void printInfo() {
@@ -20,6 +20,11 @@ public class SecondDishes extends Meal {
             System.out.println(ColorEnum.ANSI_YELLOW.getCode() + "This dish it's frozen" + ColorEnum.ANSI_RESET.getCode());
         }else{
             System.out.println((ColorEnum.ANSI_YELLOW.getCode() + "This dish is fresh" + ColorEnum.ANSI_RESET.getCode()));
+        }
+        if (this.sauce){
+            System.out.println(ColorEnum.ANSI_YELLOW.getCode() + "This dish have sauce" + ColorEnum.ANSI_RESET.getCode());
+        }else{
+            System.out.println(ColorEnum.ANSI_YELLOW.getCode() + "This dish haven't sauce" + ColorEnum.ANSI_RESET.getCode());
         }
     }
 }

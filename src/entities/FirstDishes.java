@@ -17,6 +17,15 @@ public class FirstDishes extends Meal {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.println(ColorEnum.ANSI_YELLOW.getCode() + "Is this dish precoocked? " + this.itsPrecoocked+ColorEnum.ANSI_RESET.getCode());
+        if (this.itsFrozen){
+            System.out.println(ColorEnum.ANSI_YELLOW.getCode() + "This dish it's frozen" + ColorEnum.ANSI_RESET.getCode());
+        }else{
+            System.out.println((ColorEnum.ANSI_YELLOW.getCode() + "This dish is fresh" + ColorEnum.ANSI_RESET.getCode()));
+        }
+        if (this.itsPrecoocked){
+            System.out.println(ColorEnum.ANSI_YELLOW.getCode() + "This dish it's precooked" + ColorEnum.ANSI_RESET.getCode());
+        }else{
+            System.out.println((ColorEnum.ANSI_YELLOW.getCode() + "This dish is cooked at the moment" + ColorEnum.ANSI_RESET.getCode()));
+        }
     }
 }
