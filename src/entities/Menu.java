@@ -9,9 +9,6 @@ import java.util.List;
 import static src.entities.enumeration.ColorEnum.*;
 
 public class Menu {
-
-    //TODO rimuovere codice morto
-    private List<Appetizer> appetizerList;
     private List<Meal> portataList;
     private String name;
     private TypeMenu type;
@@ -23,6 +20,10 @@ public class Menu {
         this.type = type;
         this.chefName = chefName;
         this.portataList = new ArrayList<>();
+    }
+
+    public Menu(){
+
     }
 
     public String getName() {
