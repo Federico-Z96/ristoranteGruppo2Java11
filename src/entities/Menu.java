@@ -81,7 +81,7 @@ public class Menu {
     }
 
     public void printMenu() {
-        System.out.println(ANSI_CYAN_BACKGROUND.getCode() +"Type: " + this.type);
+        System.out.println(ANSI_CYAN_BACKGROUND.getCode()+ANSI_BLACK.getCode() +"Type: " + this.type);
         System.out.println("Description: " + type.getDescription());
         System.out.println("Created by: " + this.chefName);
         System.out.println("The medium price is: " + this.mediumPrice + " €" + "\n"+ ANSI_RESET.getCode() );
@@ -90,7 +90,7 @@ public class Menu {
             meal.printInfo();
             System.out.println("");
         }
-        System.out.println("\n" + ANSI_CYAN_BACKGROUND.getCode() + "END");
+        System.out.println("\n" + ANSI_CYAN_BACKGROUND.getCode()+ANSI_BLACK.getCode() + "END");
         System.out.println("For every particular request you can ask it to our waiters"+ "\n" +ANSI_RESET.getCode());
     }
 }

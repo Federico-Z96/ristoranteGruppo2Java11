@@ -11,7 +11,6 @@ public  class Main {
     public static void main(String[] args) {List<Menu> listaMenu = new ArrayList<>();
 
         Restaurant ristorante = new Restaurant("Ristorante da Michele","via M. Mangiacotti", "Michele Mangiacotti", listaMenu );
-
         ristorante.printRestaurants();
 
         Client client1 = new Client("Giulio", "giulio@gmail.com", "+393455566777");

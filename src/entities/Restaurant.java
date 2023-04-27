@@ -8,8 +8,7 @@ import src.entities.enumeration.TypeMenu;
 import java.util.ArrayList;
 import java.util.List;
 
-import static src.entities.enumeration.ColorEnum.ANSI_GREEN_BACKGROUND;
-import static src.entities.enumeration.ColorEnum.ANSI_RESET;
+import static src.entities.enumeration.ColorEnum.*;
 
 public class Restaurant {
 
@@ -66,15 +65,13 @@ public class Restaurant {
     }
 
     public void printRestaurants() {
-        System.out.println(ANSI_GREEN_BACKGROUND.getCode() + "Restaurant : " + this.name);
+        System.out.println(ANSI_GREEN_BACKGROUND.getCode()+ ANSI_BLACK.getCode() + "Restaurant : " + this.name);
         System.out.println("Address : " + this.address);
         System.out.println("Owner of the best pizza in Napoli is : " + this.owner + " \n" + ANSI_RESET.getCode());
         Menu menu = new Menu("Vegetarian", TypeMenu.VEGETARIAN, "B. Barbieri");
-
         List<Menu> listaMenu = new ArrayList<>();
         listaMenu.add(menu);
         Restaurant ristorante = new Restaurant("Ristorante da Michele", "via M. Mangiacotti", "Michele Mangiacotti", listaMenu);
-
         menu.addPortata(new Beverage("Chianti", 10, TypeAllergensEnum.NONE, TypeBeverage.RED_WINE));
         menu.addPortata(new Beverage("Prosecco", 1, TypeAllergensEnum.NONE, TypeBeverage.WHITE_WINE));
         menu.addPortata(new Beverage("Heinekken", 5, TypeAllergensEnum.GLUTEN, TypeBeverage.BLONDE));
