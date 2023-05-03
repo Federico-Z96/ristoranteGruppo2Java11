@@ -12,7 +12,14 @@ public class Beverage extends Meal {
         super(name, price, allergens);
         this.type = type;
     }
+    /* Costruttore legato alla classe principale Meal
+    name --> nome piatto
+    price --> prezzo piatto
+    allergens --> allergeni presenti
 
+    type --> atttributo di classe collegato all'enum TypeBeverage per attribuire la tipologia di bevanda
+
+    Printinfo --> permette di stampare la bevanda */
     @Override
     public void printInfo() {
         super.printInfo();

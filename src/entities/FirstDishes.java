@@ -12,7 +12,15 @@ public class FirstDishes extends Meal {
         this.itsFrozen = itsFrozen;
         this.itsPrecoocked = itsPrecoocked;
     }
+    /* Costruttore legato alla classe principale Meal
+    name --> nome piatto
+    price --> prezzo piatto
+    allergens --> allergeni presenti
 
+    itsFrozen --> attributo di classe per sapere se il cibo è surgelato
+    itsPrecoocked --> attributo di classe per sapere se il cibo è precotto
+
+    Printinfo --> permette di stampare il piatto */
     //TODO potete anche fare un metodo che prende un colore in input
     @Override
     public void printInfo() {

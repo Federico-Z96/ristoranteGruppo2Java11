@@ -14,7 +14,14 @@ public class Desserts extends Meal {
         super(name, price, allergens);
         this.dessertsType=dessertsType;
     }
+    /* Costruttore legato alla classe principale Meal
+      name --> nome piatto
+      price --> prezzo piatto
+      allergens --> allergeni presenti
 
+      dessertsType --> atttributo di classe legato all enum TypeDessert per selezionare la tipologi adi dessert
+
+      Printinfo --> permette di stampare il piatto con l'aggiunta di sfondi colorati */
     public TypeDessert getDessertsType() {
         return dessertsType;
     }

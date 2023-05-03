@@ -12,7 +12,8 @@ public enum TypeBeverage {
         this.name = name;
         this.description = description;
     }
-
+    /* Enum dove sono presenti tutte le tipologie di bevande
+    con un costruttore che inserisce il nome è la descrizione */
     public String getName() {
         return name;
     }

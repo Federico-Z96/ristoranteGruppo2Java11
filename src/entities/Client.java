@@ -10,7 +10,14 @@ public class Client {
         this.email = email;
         this.telephone = telephone;
     }
+    /* Classe Client
 
+     costruttore che contiene
+        name --> nome del cliente
+        email --> email del cliente
+        telephone --> numero di telefono del cliente
+
+     Getter e Setter dei precedenti attributi */
     public String getName() {
         return name;
     }

@@ -11,7 +11,9 @@ public enum TypeAllergensEnum {
     NUTS_AND_DERIVATES("Contiene Noci e derivati");
 
     private final String name;
-
+    /* Enum
+    dove sono presenti tutti gli allegeni che possono essere presente dei vari piatti
+    costruttore che permette di denominare l'allergene */
     TypeAllergensEnum(String name) {
         this.name = name;
     }

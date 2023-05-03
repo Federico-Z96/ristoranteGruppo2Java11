@@ -14,7 +14,9 @@ public enum TableEnum {
 
     private final int number;
     private final int disponibility;
-
+    /* Enum
+    dove sono presenti i tavoli del ristorante
+    un costruttore che serve a numerare e a riferire se il tavolo è libero */
     TableEnum(int number, int disponibility) {
         this.number = number;
         this.disponibility = disponibility;

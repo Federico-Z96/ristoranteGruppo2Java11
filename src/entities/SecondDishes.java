@@ -13,6 +13,15 @@ public class SecondDishes extends Meal {
         this.itsFrozen = itsFrozen;
         this.sauce = sauce;
     }
+    /* Costruttore legato alla classe principale Meal
+name --> nome piatto
+price --> prezzo piatto
+allergens --> allergeni presenti
+
+itsFrozen --> attributo di classe per sapere se il cibo è surgelato
+sauce --> attributo di classe per sapere se il cibo contiene qualche salsa specifica
+
+Printinfo --> permette di stampare il piatto */
     @Override
     public void printInfo() {
        super.printInfo();

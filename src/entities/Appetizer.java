@@ -10,7 +10,13 @@ public class Appetizer extends Meal {
         super(name, price, allergens);
         this.itsFrozen = itsFrozen;
     }
+    /* Costruttore legato alla classe principale Meal
+    name --> nome piatto
+    price --> prezzo piatto
+    allergens --> allergeni presenti
 
+    itFrozen --> attributo di classe per sapere se il cibo è surgelato
+    Printinfo --> permette di stampare il piatto */
     @Override
     public void printInfo() {
         super.printInfo();

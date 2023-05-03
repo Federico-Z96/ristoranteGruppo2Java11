@@ -9,7 +9,7 @@ import java.util.Map;
 
 public  class Main {
     public static void main(String[] args) {List<Menu> listaMenu = new ArrayList<>();
-
+/*il main contiene tutti i dati e i richiamare per poter far funzionare il programma e farlo runnare*/
         Restaurant ristorante = new Restaurant("Ristorante da Michele","via M. Mangiacotti", "Michele Mangiacotti", listaMenu );
         ristorante.printRestaurants();
 

@@ -14,7 +14,8 @@ public abstract class Meal {
         this.price = price;
         this.allergens = allergens;
     }
-
+ /*classe padre dalla quale tutte le altre classi prendono i dati generali,
+ * nome del piatto, prezzo del piatto e gli allergeni presenti */
     public String getName() {
         return name;
     }
@@ -31,6 +32,7 @@ public abstract class Meal {
         this.price = price;
     }
 
+    /*printinfo per stampare  il piatto*/
 
     public void printInfo(){
         System.out.println( ANSI_WHITE_BACKGROUND.getCode() + this.getName() + " : " + this.getPrice()+ "€" + ANSI_RESET.getCode());

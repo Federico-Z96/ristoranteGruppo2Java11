@@ -13,7 +13,11 @@ public enum ColorEnum {
     ANSI_YELLOW("\u001B[33m"),
     ANSI_BLACK("\u001B[30m"),
     ANSI_RESET("\u001B[0m");
-
+    /* Enum
+    dove sono presenti
+    i colori di sfondo da inserire nelle stampe delle varie portate
+    costruttore che serve ad aggiungere l'attributo che fa funzionare
+    la colarazione */
     private final String code;
 
     ColorEnum(String code) {

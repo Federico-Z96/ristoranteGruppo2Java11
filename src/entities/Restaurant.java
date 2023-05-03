@@ -23,7 +23,8 @@ public class Restaurant {
         this.owner = owner;
         this.menuList = new ArrayList<>();
     }
-
+/*Il costruttore serve dare le informazioni del ristorante
+* il nome, la via, il proprietario e la lista  dove verranno inseriti i vari menu */
     public String getName() {
         return name;
     }
@@ -63,7 +64,7 @@ public class Restaurant {
     public void removeMenu(Menu menu) {
         menuList.remove(menu);
     }
-
+/*PrinteRestaurants serve a stampare tutti i piatti dei vari menu*/
     public void printRestaurants() {
         System.out.println(ANSI_GREEN_BACKGROUND.getCode()+ ANSI_BLACK.getCode() + "Restaurant : " + this.name);
         System.out.println("Address : " + this.address);

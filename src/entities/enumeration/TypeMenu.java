@@ -12,7 +12,9 @@ public enum TypeMenu {
         this.name = name;
         this.description = description;
     }
-
+    /* un Enum
+    dove è inserito la tipologia del menù dove sono presenti le varie portate
+    con un costruttore che da una denominazione e una descrizione */
     public String getName() {
         return name;
     }

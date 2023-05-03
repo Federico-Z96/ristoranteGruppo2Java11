@@ -7,7 +7,8 @@ public enum TypeDessert {
     PARFAIT("A portion of parfait dessert");
 
     String description;
-
+    /* Enum dove sono presenti del diverse tipolgie di dessert
+    con un cotruttore che descrive il dessert */
     TypeDessert(String description) {
         this.description = description;
     }

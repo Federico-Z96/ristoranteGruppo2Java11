@@ -21,7 +21,11 @@ public class Menu {
         this.chefName = chefName;
         this.portataList = new ArrayList<>();
     }
-
+    /*la classe menù contiene un costruttore dove è presente
+    il nome,
+    la tipologia di menù
+    il nome dello chef
+    ed infine una lista dove dove sono presenti le portate*/
     public Menu(){
 
     }
@@ -69,7 +73,7 @@ public class Menu {
     public void removePortata(Meal portata) {
         portataList.remove(portata);
     }
-
+/*finmediuprice serve per poter calcolare il prezzio medio per tutti i piatti legati allle relative portate*/
     public void findMediumPrice() {
         double totalPrice = 0;
         int itemCount = 0;
@@ -79,7 +83,7 @@ public class Menu {
         }
         this.mediumPrice = Math.round(totalPrice / itemCount * 100.0) / 100.0;
     }
-
+   /*  Printinfo --> permette di stampare la lista di portate con i realtivi dati e colori di background */
     public void printMenu() {
         System.out.println(ANSI_CYAN_BACKGROUND.getCode()+ANSI_BLACK.getCode() +"Type: " + this.type);
         System.out.println("Description: " + type.getDescription());
