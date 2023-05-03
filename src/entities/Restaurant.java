@@ -17,6 +17,17 @@ public class Restaurant {
     private String owner;
     private List<Menu> menuList;
 
+    //TODO inserire il numero di tavoli
+    //TODO inserire la mappa cliente tavolo e sull'add ci mettiamo un controllo sulla capienza
+
+    /**
+     *
+     *
+     * @param name
+     * @param address
+     * @param owner
+     * @param menuList
+     */
     public Restaurant(String name, String address, String owner, List<Menu> menuList) {
         this.name = name;
         this.address = address;
@@ -64,7 +75,13 @@ public class Restaurant {
     public void removeMenu(Menu menu) {
         menuList.remove(menu);
     }
-/*PrinteRestaurants serve a stampare tutti i piatti dei vari menu*/
+
+    /**
+     *
+     */
+    /*PrinteRestaurants serve a stampare tutti i piatti dei vari menu*/
+
+    //TODO da fare nel main qui solo la logica
     public void printRestaurants() {
         System.out.println(ANSI_GREEN_BACKGROUND.getCode()+ ANSI_BLACK.getCode() + "Restaurant : " + this.name);
         System.out.println("Address : " + this.address);

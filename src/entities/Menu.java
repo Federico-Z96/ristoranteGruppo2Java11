@@ -26,6 +26,7 @@ public class Menu {
     la tipologia di menù
     il nome dello chef
     ed infine una lista dove dove sono presenti le portate*/
+    //TODO ci vuole?
     public Menu(){
 
     }
