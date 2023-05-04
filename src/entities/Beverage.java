@@ -5,24 +5,33 @@ import src.entities.enumeration.TypeBeverage;
 
 import static src.entities.enumeration.ColorEnum.ANSI_PURPLE;
 
+/**
+ * Questa classe rappresenta una bevanda, che estende la classe Meal.
+ * @see Meal
+ */
 public class Beverage extends Meal {
+
     private TypeBeverage type;
 
+    /**
+     * Costruttore per la classe Beverage.
+     * @param name il nome della bevanda
+     * @param price il prezzo della bevanda
+     * @param allergens gli allergeni presenti nella bevanda
+     * @param type il tipo di bevanda
+     */
     public Beverage(String name, double price, TypeAllergensEnum allergens, TypeBeverage type) {
         super(name, price, allergens);
         this.type = type;
     }
-    /* Costruttore legato alla classe principale Meal
-    name --> nome piatto
-    price --> prezzo piatto
-    allergens --> allergeni presenti
 
-    type --> atttributo di classe collegato all'enum TypeBeverage per attribuire la tipologia di bevanda
-
-    Printinfo --> permette di stampare la bevanda */
+    /**
+     * Stampa le informazioni sulla bevanda, incluso il tipo di bevanda.
+     */
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.print(ANSI_PURPLE.getCode() + type.getName() + " : " + type.getDescription()+"\n");
+        System.out.print(ANSI_PURPLE.getCode() + type.getName() + " : " + type.getDescription() + "\n");
     }
+
 }

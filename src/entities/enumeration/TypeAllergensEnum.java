@@ -1,25 +1,32 @@
 package src.entities.enumeration;
 
-
+/**
+ Enum che rappresenta i possibili allergeni che possono essere presenti nei piatti del menu.
+ */
 public enum TypeAllergensEnum {
-    NONE("Allergens Free"),
-    GLUTEN("Contiene Glutine"),
-    LACTOS("Contiene Lattosio"),
-    EGGS_AND_DERIVATES("Contiene Uova e derivati"),
-    FISH_AND_DERIVATES("Contiene Pesce e derivati"),
-    PEANUTS_AND_DERIVATES("Contiene Noccioline e derivati"),
-    NUTS_AND_DERIVATES("Contiene Noci e derivati");
+    NONE("Senza allergeni"),
+    GLUTEN("Contiene glutine"),
+    LACTOS("Contiene lattosio"),
+    EGGS_AND_DERIVATES("Contiene uova e derivati"),
+    FISH_AND_DERIVATES("Contiene pesce e derivati"),
+    PEANUTS_AND_DERIVATES("Contiene noccioline e derivati"),
+    NUTS_AND_DERIVATES("Contiene noci e derivati");
 
     private final String name;
-    /* Enum
-    dove sono presenti tutti gli allegeni che possono essere presente dei vari piatti
-    costruttore che permette di denominare l'allergene */
+
+    /**
+     Costruttore che permette di inizializzare il nome dell'allergene.
+     *@param name il nome dell'allergene
+     */
     TypeAllergensEnum(String name) {
         this.name = name;
     }
 
+    /**
+     Metodo che restituisce il nome dell'allergene.
+     *@return il nome dell'allergene
+     */
     public String getName() {
         return name;
     }
 }
-

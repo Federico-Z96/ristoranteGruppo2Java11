@@ -7,12 +7,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public  class Main {
+public class Main {
+    /**
+     * Questa è la classe principale del programma. Contiene il metodo main che permette di eseguire il programma.
+     * In particolare, viene creato un ristorante con un nome, un indirizzo, un nome del proprietario, una lista di menu e un numero di tavoli.
+     * Viene poi creato un menu con un nome, un tipo, e un autore, e vengono aggiunte delle portate.
+     * Infine, vengono stampati a video i dati del ristorante.
+     * Viene anche creato un cliente con nome, email e numero di telefono, e una prenotazione con un tavolo e il relativo cliente.
+     */
     public static void main(String[] args) {
-        /*il main contiene tutti i dati e i richiamare per poter far funzionare il programma e farlo runnare*/
-
         List<Menu> listaMenu = new ArrayList<Menu>();
-        Restaurant ristorante = new Restaurant("Ristorante da Michele","via M. Mangiacotti", "Michele Mangiacotti", listaMenu,10 );
+        Restaurant ristorante = new Restaurant("Ristorante da Michele", "via M. Mangiacotti", "Michele Mangiacotti", listaMenu, 10);
         Menu menu = new Menu("Vegetarian", TypeMenu.VEGETARIAN, "B. Barbieri");
         listaMenu.add(menu);
         menu.addPortata(new Beverage("Chianti", 10, TypeAllergensEnum.NONE, TypeBeverage.RED_WINE));
@@ -41,18 +46,23 @@ public  class Main {
         menu.addPortata(new Desserts("Gelato al Babà", 3.99, TypeAllergensEnum.LACTOS, TypeDessert.FROZEN));
         ristorante.printRestaurants();
 
-        Client client1 = new Client("Giulio", "giulio@gmail.com", "+393455566777");
-        Map<Client, Table> reservations = new HashMap<Client,Table>();
-        Table t1 = new Table(1,4);
-        reservations.put(client1,t1);
+    /**
+     Questo codice crea un nuovo oggetto Cliente "client1" con i seguenti dati: nome, indirizzo email e numero di telefono.
+     Successivamente, crea una mappa "reservations" che associa il cliente alla sua prenotazione di un tavolo "t1".
+     Il tavolo ha un identificativo numerico "1" e una capienza massima di 4 persone.
+     *@param client1 l'oggetto Cliente creato con nome, indirizzo email e numero di telefono.
+     *@param reservations la mappa che associa il cliente alla sua prenotazione del tavolo.
+     *@param t1 l'oggetto Tavolo creato con identificativo numerico "1" e capienza massima di 4 persone.
+         */
 
-
+      Client client1 = new Client("Giulio", "giulio@gmail.com", "+393455566777");
+      Map<Client, Table> reservations = new HashMap<Client, Table>();
+      Table t1 = new Table(1, 4);
+      reservations.put(client1, t1);
 
     }
-
-
-
 }
+
 
 
 
