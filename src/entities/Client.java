@@ -2,6 +2,8 @@ package src.entities;
 
 public class Client {
 
+    //TODO mettiamo un po di funzionalità?
+
     private String name;
     private String email;
     private String telephone;

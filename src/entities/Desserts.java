@@ -1,7 +1,7 @@
 package src.entities;
 
 import src.entities.enumeration.TypeAllergensEnum;
-import src.entities.enumeration.TypeDessert;
+import src.entities.enumeration.TypeDessertEnum;
 
 import static src.entities.enumeration.ColorEnum.ANSI_RESET;
 import static src.entities.enumeration.ColorEnum.ANSI_YELLOW;
@@ -12,7 +12,7 @@ import static src.entities.enumeration.ColorEnum.ANSI_YELLOW;
  */
 public class Desserts extends Meal {
 
-    private TypeDessert dessertsType;
+    private TypeDessertEnum dessertsType;
 
     /**
      Costruisce un oggetto Desserts.
@@ -21,7 +21,7 @@ public class Desserts extends Meal {
      *@param allergens gli allergeni presenti nel piatto
      *@param dessertsType la tipologia di dolce
      */
-    public Desserts(String name, double price, TypeAllergensEnum allergens, TypeDessert dessertsType) {
+    public Desserts(String name, double price, TypeAllergensEnum allergens, TypeDessertEnum dessertsType) {
         super(name, price, allergens);
         this.dessertsType=dessertsType;
     }
@@ -30,7 +30,7 @@ public class Desserts extends Meal {
      Restituisce la tipologia di dolce del piatto.
      *@return la tipologia di dolce del piatto
      */
-    public TypeDessert getDessertsType() {
+    public TypeDessertEnum getDessertsType() {
         return dessertsType;
     }
 
@@ -38,7 +38,7 @@ public class Desserts extends Meal {
      Imposta la tipologia di dolce del piatto.
      *@param dessertsType la tipologia di dolce del piatto
      */
-    public void setDessertsType(TypeDessert dessertsType) {
+    public void setDessertsType(TypeDessertEnum dessertsType) {
         this.dessertsType = dessertsType;
     }
 

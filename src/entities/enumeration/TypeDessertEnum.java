@@ -3,7 +3,7 @@ package src.entities.enumeration;
 /**
  L'enumerazione TypeDessert rappresenta le diverse tipologie di dessert all'interno di un ristorante.
  */
-public enum TypeDessert {
+public enum TypeDessertEnum {
     CAKE("Una fetta di deliziosi dolci"),
     SPOON_DESSERT("Una coppa di dessert"),
     FROZEN("Gelato di produzione propria"),
@@ -15,7 +15,7 @@ public enum TypeDessert {
      Costruttore dell'enumerazione TypeDessert, che associa una descrizione ad ogni tipologia di dessert.
      *@param description la descrizione della tipologia di dessert.
      */
-    TypeDessert(String description) {
+    TypeDessertEnum(String description) {
         this.description = description;
     }
 

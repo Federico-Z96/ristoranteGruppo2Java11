@@ -1,7 +1,7 @@
 package src.entities;
 
 import src.entities.enumeration.TypeAllergensEnum;
-import src.entities.enumeration.TypeBeverage;
+import src.entities.enumeration.TypeBeverageEnum;
 
 import static src.entities.enumeration.ColorEnum.ANSI_PURPLE;
 
@@ -11,7 +11,7 @@ import static src.entities.enumeration.ColorEnum.ANSI_PURPLE;
  */
 public class Beverage extends Meal {
 
-    private TypeBeverage type;
+    private TypeBeverageEnum type;
 
     /**
      * Costruttore per la classe Beverage.
@@ -20,7 +20,7 @@ public class Beverage extends Meal {
      * @param allergens gli allergeni presenti nella bevanda
      * @param type il tipo di bevanda
      */
-    public Beverage(String name, double price, TypeAllergensEnum allergens, TypeBeverage type) {
+    public Beverage(String name, double price, TypeAllergensEnum allergens, TypeBeverageEnum type) {
         super(name, price, allergens);
         this.type = type;
     }

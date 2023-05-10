@@ -1,7 +1,6 @@
 package src.entities;
 
-import src.entities.enumeration.ColorEnum;
-import src.entities.enumeration.TypeMenu;
+import src.entities.enumeration.TypeMenuEnum;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +15,9 @@ public class Menu {
 
     private List<Meal> portataList;
     private String name;
-    private TypeMenu type;
+    private TypeMenuEnum type;
+
+    //TODO inserire sempre gli oggetti
     private double mediumPrice;
     private String chefName;
 
@@ -27,7 +28,7 @@ public class Menu {
      *@param type il tipo del menu
      *@param chefName il nome dello chef che ha creato il menu
      */
-    public Menu(String name, TypeMenu type, String chefName) {
+    public Menu(String name, TypeMenuEnum type, String chefName) {
         this.name = name;
         this.type = type;
         this.chefName = chefName;
@@ -54,7 +55,7 @@ public class Menu {
      Restituisce il tipo del menu.
      *@return il tipo del menu
      */
-    public TypeMenu getType() {
+    public TypeMenuEnum getType() {
         return type;
     }
 
@@ -62,7 +63,7 @@ public class Menu {
      Imposta il tipo del menu.
      *@param type il tipo del menu da impostare
      */
-    public void setType(TypeMenu type) {
+    public void setType(TypeMenuEnum type) {
         this.type = type;
     }
 

@@ -1,11 +1,5 @@
 package src.entities;
 
-import src.entities.enumeration.TypeAllergensEnum;
-import src.entities.enumeration.TypeBeverage;
-import src.entities.enumeration.TypeDessert;
-import src.entities.enumeration.TypeMenu;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

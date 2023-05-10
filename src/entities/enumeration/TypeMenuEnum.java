@@ -2,7 +2,7 @@ package src.entities.enumeration;
 /**
  L'enumerazione TypeMenu rappresenta la tipologia di un menù all'interno di un ristorante.
  */
-public enum TypeMenu {
+public enum TypeMenuEnum {
 
     CARNIVOROUS("Carnivorous", "con piatti a base di carne e verdure"),
     VEGETARIAN("Vegetarian", "senza carne o pesce utilizzati"),
@@ -16,7 +16,7 @@ public enum TypeMenu {
     private String name;
     private String description;
 
-    TypeMenu(String name, String description) {
+    TypeMenuEnum(String name, String description) {
         this.name = name;
         this.description = description;
     }

@@ -3,7 +3,7 @@ package src.entities.enumeration;
 /**
  Enum che rappresenta le diverse tipologie di bevande disponibili nel menu del ristorante.
  */
-public enum TypeBeverage {
+public enum TypeBeverageEnum {
 
     RED("Red", "Blend di malto d'orzo caramellato e torrefatto ad alta temperatura e una generosa quantità di luppolo"),
     BLONDE("Blonde", "Birre leggere fatte con malti leggermente tostati"),
@@ -19,7 +19,7 @@ public enum TypeBeverage {
      *@param name il nome della bevanda
      *@param description la descrizione della bevanda
      */
-    TypeBeverage(String name, String description) {
+    TypeBeverageEnum(String name, String description) {
         this.name = name;
         this.description = description;
     }
