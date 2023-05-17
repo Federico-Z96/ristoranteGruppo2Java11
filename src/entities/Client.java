@@ -4,7 +4,9 @@ public class Client {
 
     //TODO mettiamo un po di funzionalità?
 
+private  String id;
     private String name;
+    private String surname;
     private String email;
     private String telephone;
 
@@ -14,10 +16,21 @@ public class Client {
      * @param email l'indirizzo email del cliente
      * @param telephone il numero di telefono del cliente
      */
-    public Client(String name, String email, String telephone) {
+    public Client(String id, String name,String surname, String email, String telephone) {
+        this.id = id;
         this.name = name;
+        this.surname = surname;
         this.email = email;
         this.telephone = telephone;
+    }
+
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     /**
@@ -34,6 +47,15 @@ public class Client {
      */
     public void setName(String name) {
         this.name = name;
+    }
+
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 
     /**
